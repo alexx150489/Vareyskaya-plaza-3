@@ -30,7 +30,7 @@ input {outline:none;}
 /* General */
 main {min-height:100%;}
 .clear.clear-footer {height:100px;}
-.site-wrap {max-width: 1450px; margin: 0 auto; padding: 0 15px;}
+.site-wrap {min-width: 1450px; padding: 0 15px;}
 .container { position: relative; min-height: 100%;}
 
 
@@ -77,9 +77,6 @@ header {width:100%;}
 		p, h2, h3 {orphans: 3; widows: 3;}
 		h2, h3 {page-break-after: avoid;}
 }
-
-
-
 
 
 /* ==========================================================================
@@ -205,7 +202,7 @@ header {width:100%;}
 }
 
 .block-footer .footer-menu menu {
-			width: 383px;
+	width: 383px;
 	overflow:hidden;
 }
 
@@ -292,7 +289,6 @@ main.errorpage {
 	left: -106px;
 	background-color: #ffa500;
 }
-
 
 .block-errorpage .errorpage-description {
 	margin-bottom: 85px;
