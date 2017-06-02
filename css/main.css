@@ -30,16 +30,16 @@ input {outline:none;}
 /* General */
 main {min-height:100%;}
 .clear.clear-footer {height:100px;}
-.site-wrap {min-width:320px; padding: 0 13px; margin:0px auto;}
+.site-wrap {max-width: 1450px; margin: 0 auto; padding: 0 15px;}
 .container { position: relative; min-height: 100%;}
 
 
 /* Header */
-header {background:#efefef; width:100%;}
+header {width:100%;}
 
 
 /* Footer */
-footer {position:absolute;left: 0;bottom: 0;width: 100%;height: 761px;}
+/*footer {position:absolute;left: 0;bottom: 0;width: 100%;height: 761px;}*/
 
 
 
@@ -77,3 +77,242 @@ footer {position:absolute;left: 0;bottom: 0;width: 100%;height: 761px;}
 		p, h2, h3 {orphans: 3; widows: 3;}
 		h2, h3 {page-break-after: avoid;}
 }
+
+
+
+
+
+/* ==========================================================================
+	 Начало CSS >>>
+	 ========================================================================== */
+/* ==========================================================================
+	 Header >>>
+	 ========================================================================== */
+.block-header .header-wrapper {
+	padding-top: 50px;
+}
+
+.block-header .header-logotype {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 94px;
+}
+
+.block-header .header-tel {
+	position: relative;
+	padding-right: 38px;
+	margin-right: 100px;
+	font-family: 'LitteraPlainBook';
+	font-size: 33px;
+	line-height: 36px;
+	display: inline-block;
+	vertical-align: middle;
+	color: #fff;
+}
+
+.block-header .header-tel-callback {
+	position: absolute;
+	content: '';
+	width: 26px;
+	height: 21px;
+	top: 9px;
+	left: 252px;
+	background:	url("../images/svg/callback.svg") 0 0 no-repeat;
+	cursor: pointer;
+}
+
+.block-header .header-add-request {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.block-header .add-request-btn {
+	padding: 12px 29px;
+	font-family: 'LitteraPlainBold';
+	font-size: 13px;
+	color: #fff;
+	text-transform: uppercase;
+	background-color: transparent;
+	border: 1px solid rgba(255, 255, 255, .5);
+}
+
+.block-header .header-burder {
+	float: right;
+	padding-top: 29px;
+}
+
+.block-header .burger-btn {
+	padding: 0;
+	border: none;
+	width: 49px;
+	height: 25px;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+/* ==========================================================================
+	 Footer >>>
+	 ========================================================================== */
+.block-footer {
+	background-color: #171524;
+}
+
+.block-footer .footer-wrapper {
+	padding-top: 81px;
+	padding-bottom: 20px;
+}
+
+.block-footer .column-left {
+	float: left;
+}
+
+.block-footer .column-right {
+	float: right;
+}
+
+.block-footer .footer-copyright {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 89px;
+	font-family: 'LitteraPlainLight';
+	font-size: 16px;
+	color: #464262;
+}
+
+.block-footer .logo {
+	display: block;
+	margin-bottom: 3px;
+}
+
+.block-footer .logo-description {
+	font-size: 14px;
+	color: #626263;
+}
+
+.footer-description {
+	margin-bottom: 70px;
+}
+
+.block-footer .footer-menu {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.block-footer .footer-menu a {
+	font-family: 'LitteraPlainMedium';
+	font-size: 16px;
+	color: #fff;
+}
+
+.block-footer .footer-menu menu {
+			width: 383px;
+	overflow:hidden;
+}
+
+.block-footer li {
+	width: 50%;
+	margin-bottom: 18px;
+	float:left;
+	display: inline;
+}
+
+.block-footer .footer-tel {
+	position: relative;
+	padding-right: 38px;
+	margin-right: 42px;
+	font-family: 'LitteraPlainBook';
+	font-size: 25px;
+	line-height: 36px;
+	display: inline-block;
+	vertical-align: top;
+	color: #fff;
+}
+
+.block-footer .footer-tel-callback {
+	position: absolute;
+	content: '';
+	width: 25px;
+	height: 20px;
+	top: 10px;
+	left: 198px;
+	background:	url("../images/svg/callback_footer.svg") 0 0 no-repeat;
+	cursor: pointer;
+}
+
+.block-footer .footer-add-request {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.block-footer .add-request-btn {
+	padding: 12px 29px;
+	font-family: 'LitteraPlainBold';
+	font-size: 13px;
+	color: #fff;
+	text-transform: uppercase;
+	background-color: transparent;
+	border: 1px solid rgba(255, 255, 255, .5);
+}
+
+/* ==========================================================================
+	 404 Page >>>
+	 ========================================================================== */
+
+main.errorpage {
+	min-height: 900px;
+	background: #3d3639 url("../images/bg_image_404.jpg") center center no-repeat;
+}
+
+.block-errorpage {
+	padding-top: 87px;
+}
+
+.errorpage-wrapper {
+	padding-left: 101px;
+}
+
+.block-errorpage .errorpage-title {
+	margin-bottom: 37px;
+	font-family: 'LitteraPlainBold';
+	font-size: 66px;
+	line-height: 72px;
+	color: #fff;
+}
+
+.block-errorpage .errorpage-title span {
+	position: relative;
+}
+
+.block-errorpage .errorpage-title span::after {
+	position: absolute;
+	content: '';
+	width: 83px;
+	height: 6px;
+	top: 36px;
+	left: -106px;
+	background-color: #ffa500;
+}
+
+
+.block-errorpage .errorpage-description {
+	margin-bottom: 85px;
+	padding-right: 675px;
+	font-family: 'LitteraPlainLight';
+	font-size: 24px;
+	line-height: 36px;
+	color: #fff;
+}
+
+.block-errorpage .errorpage-description a{
+	color: #ffa500;
+}
+
+
+.block-errorpage .errorpage-menu a{
+	font-family: 'LitteraPlainLight';
+	font-size: 18px;
+	line-height: 36px;
+	color: #fff;
+}
+
+
