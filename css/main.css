@@ -187,17 +187,17 @@ header {width:100%;}
 
 .block-footer .column-left {
 	float: left;
-	width: 50%;
+	width: 60%;
 }
 
 .block-footer .column-right {
 	float: right;
-	width: 50%;
+	width: 40%;
 }
 
 .block-footer .footer-copyright {
 	float: left;
-	width: 50%;
+	width: 40%;
 	font-family: 'LitteraPlainLight';
 	font-size: 16px;
 	color: #464262;
@@ -219,7 +219,7 @@ header {width:100%;}
 
 .block-footer .footer-menu {
 	float: left;
-	width: 50%;
+	width: 60%;
 }
 
 .block-footer .footer-menu a {
@@ -229,8 +229,7 @@ header {width:100%;}
 }
 
 .block-footer .footer-menu menu {
-	width: 383px;
-	overflow:hidden;
+	width: 100%;
 }
 
 .block-footer li {
