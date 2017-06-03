@@ -30,7 +30,7 @@ input {outline:none;}
 /* General */
 main {min-height:100%;}
 .clear.clear-footer {height:100px;}
-.site-wrap {min-width: 1450px; padding: 0 165px;}
+.site-wrap {max-width: 1450px; min-width: 1169px; padding: 0 15px; margin: 0 auto;}
 .container { position: relative; min-height: 100%;}
 
 
@@ -107,6 +107,10 @@ header {width:100%;}
 	color: #fff;
 }
 
+.block-header .header-tel a{
+	color: #fff;
+}
+
 .block-header .header-tel-callback {
 	position: absolute;
 	content: '';
@@ -124,13 +128,35 @@ header {width:100%;}
 }
 
 .block-header .add-request-btn {
-	padding: 12px 29px;
+	padding: 0;
+	margin: 0;
+	display: inline-block;vertical-align: top;
+	width: 187px;
+	height: 44px;
+	position: relative;
 	font-family: 'LitteraPlainBold';
 	font-size: 13px;
 	color: #fff;
 	text-transform: uppercase;
 	background-color: transparent;
 	border: 1px solid rgba(255, 255, 255, .5);
+}
+
+.block-header .add-request-btn span {
+	position: absolute;
+	top: 11px;
+	left: 27px;
+	width: 130px;
+	z-index: 999;
+}
+
+.block-header .add-request-btn .bg {
+	display: none;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 44px;
+	background-color: #ffa500;
 }
 
 .block-header .header-burder {
@@ -161,16 +187,17 @@ header {width:100%;}
 
 .block-footer .column-left {
 	float: left;
+	width: 50%;
 }
 
 .block-footer .column-right {
 	float: right;
+	width: 50%;
 }
 
 .block-footer .footer-copyright {
-	display: inline-block;
-	vertical-align: top;
-	margin-right: 89px;
+	float: left;
+	width: 50%;
 	font-family: 'LitteraPlainLight';
 	font-size: 16px;
 	color: #464262;
@@ -191,8 +218,8 @@ header {width:100%;}
 }
 
 .block-footer .footer-menu {
-	display: inline-block;
-	vertical-align: top;
+	float: left;
+	width: 50%;
 }
 
 .block-footer .footer-menu a {
@@ -214,14 +241,19 @@ header {width:100%;}
 }
 
 .block-footer .footer-tel {
+	float: right;
 	position: relative;
-	padding-right: 38px;
-	margin-right: 42px;
+	width: 50%;
 	font-family: 'LitteraPlainBook';
 	font-size: 25px;
 	line-height: 36px;
-	display: inline-block;
-	vertical-align: top;
+	color: #fff;
+	text-align: right;
+}
+
+
+.block-footer .footer-tel a{
+	position: relative;
 	color: #fff;
 }
 
@@ -230,25 +262,47 @@ header {width:100%;}
 	content: '';
 	width: 25px;
 	height: 20px;
-	top: 10px;
+	top: 6px;
 	left: 198px;
 	background:	url("../images/svg/callback_footer.svg") 0 0 no-repeat;
 	cursor: pointer;
 }
 
 .block-footer .footer-add-request {
-	display: inline-block;
-	vertical-align: top;
+	float: right;
+	width: 50%;
+	text-align: right;
 }
 
 .block-footer .add-request-btn {
-	padding: 12px 29px;
+	position: relative;
+	padding: 0;
+	margin: 0;
+	width: 170px;
+	height: 40px;
 	font-family: 'LitteraPlainBold';
 	font-size: 13px;
 	color: #fff;
 	text-transform: uppercase;
 	background-color: transparent;
 	border: 1px solid rgba(255, 255, 255, .5);
+}
+
+.block-footer .add-request-btn span {
+	position: absolute;
+	top: 11px;
+	left: 22px;
+	width: 130px;
+	z-index: 999;
+}
+
+.block-footer .add-request-btn .bg {
+	display: none;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 40px;
+	background-color: #ffa500;
 }
 
 /* ==========================================================================
@@ -258,6 +312,7 @@ header {width:100%;}
 main.errorpage {
 	min-height: 900px;
 	background: #3d3639 url("../images/bg_image_404.jpg") center center no-repeat;
+	background-size: cover;
 }
 
 .block-errorpage {
@@ -292,7 +347,7 @@ main.errorpage {
 
 .block-errorpage .errorpage-description {
 	margin-bottom: 85px;
-	padding-right: 675px;
+	padding-right: 310px;
 	font-family: 'LitteraPlainLight';
 	font-size: 24px;
 	line-height: 36px;
