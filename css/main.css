@@ -220,6 +220,7 @@ header {width:100%;}
 .block-footer .footer-menu {
 	float: left;
 	width: 60%;
+	padding-left: 20px;
 }
 
 .block-footer .footer-menu a {
@@ -247,7 +248,7 @@ header {width:100%;}
 	font-size: 25px;
 	line-height: 36px;
 	color: #fff;
-	text-align: right;
+	text-align: left;
 }
 
 
