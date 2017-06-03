@@ -244,6 +244,10 @@ header {width:100%;}
 	color: #fff;
 }
 
+.block-footer .footer-menu a:hover{
+	text-decoration: underline;
+}
+
 .block-footer .footer-menu menu {
 	width: 100%;
 }
@@ -348,6 +352,8 @@ main.errorpage {
 }
 
 .block-errorpage .errorpage-title {
+	position: relative;
+	width: 377px;
 	margin-bottom: 40px;
 	font-family: 'LitteraPlainBold';
 	font-size: 66px;
@@ -355,17 +361,14 @@ main.errorpage {
 	color: #fff;
 }
 
-.block-errorpage .errorpage-title span {
-	position: relative;
-}
 
-.block-errorpage .errorpage-title span::after {
+.block-errorpage .errorpage-title::after {
 	position: absolute;
 	content: '';
 	width: 83px;
 	height: 6px;
 	top: 33px;
-	left: -112px;
+	left: -114px;
 	background-color: #ffa500;
 }
 
@@ -391,6 +394,10 @@ main.errorpage {
 	font-size: 18px;
 	line-height: 36px;
 	color: #fff;
+}
+
+.block-errorpage .errorpage-menu a:hover{
+	text-decoration: underline;
 }
 
 
