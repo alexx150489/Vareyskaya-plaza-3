@@ -30,7 +30,7 @@ input {outline:none;}
 /* General */
 main {min-height:100%;}
 .clear.clear-footer {height:100px;}
-.site-wrap {max-width: 1450px; min-width: 1169px; padding: 0 15px; margin: 0 auto;}
+.site-wrap {width: 1169px; margin: 0 auto;}
 .container { position: relative; min-height: 100%;}
 
 
@@ -90,20 +90,20 @@ header {width:100%;}
 }
 
 .block-header .header-logotype {
-	display: inline-block;
-	vertical-align: middle;
-	margin-right: 94px;
+	float: left;
+	width: 33%;
 }
 
 .block-header .header-tel {
+	float: left;
+	width: 31%;
 	position: relative;
-	padding-right: 38px;
-	margin-right: 100px;
+	padding-right: 45px;
+	padding-top: 22px;
 	font-family: 'LitteraPlainBook';
-	font-size: 33px;
+	font-size: 32px;
+	letter-spacing: 2px;
 	line-height: 36px;
-	display: inline-block;
-	vertical-align: middle;
 	color: #fff;
 }
 
@@ -116,55 +116,68 @@ header {width:100%;}
 	content: '';
 	width: 26px;
 	height: 21px;
-	top: 9px;
-	left: 252px;
+	top: 31px;
+	left: 284px;
 	background:	url("../images/svg/callback.svg") 0 0 no-repeat;
 	cursor: pointer;
 }
 
 .block-header .header-add-request {
-	display: inline-block;
-	vertical-align: middle;
+	float: left;
+	width: 20%;
+	padding-top: 19px;
+	padding-top: 19px;
 }
 
 .block-header .add-request-btn {
-	padding: 0;
-	margin: 0;
-	display: inline-block;vertical-align: top;
+	display: inline-block;
+	vertical-align: top;
 	width: 187px;
 	height: 44px;
 	position: relative;
 	font-family: 'LitteraPlainBold';
-	font-size: 13px;
+	font-size: 14px;
 	color: #fff;
 	text-transform: uppercase;
 	background-color: transparent;
 	border: 1px solid rgba(255, 255, 255, .5);
+	transition: all 1s;
 }
 
 .block-header .add-request-btn span {
 	position: absolute;
-	top: 11px;
-	left: 27px;
-	width: 130px;
+	top: 13px;
+	left: 25px;
+	width: 140px;
 	z-index: 999;
 }
 
-.block-header .add-request-btn .bg {
-	display: none;
+.block-header .add-request-btn::before {
+	content: '';
 	position: absolute;
 	bottom: 0;
+	left: 0;
 	width: 100%;
-	height: 44px;
+	height: 0px;
 	background-color: #ffa500;
+	transition: all 1s;
 }
+
+.block-header .add-request-btn:hover::before, .block-header .add-request-btn:focus::before {
+	height: 43px;
+}
+
 
 .block-header .header-burder {
 	float: right;
+	width: 10%;
 	padding-top: 29px;
+	text-align: right;
 }
 
 .block-header .burger-btn {
+	display: inline-block;
+	vertical-align: top;
 	padding: 0;
 	border: none;
 	width: 49px;
@@ -181,8 +194,8 @@ header {width:100%;}
 }
 
 .block-footer .footer-wrapper {
-	padding-top: 81px;
-	padding-bottom: 20px;
+	padding-top: 101px;
+	padding-bottom: 30px;
 }
 
 .block-footer .column-left {
@@ -198,6 +211,7 @@ header {width:100%;}
 .block-footer .footer-copyright {
 	float: left;
 	width: 40%;
+	padding-top: 10px;
 	font-family: 'LitteraPlainLight';
 	font-size: 16px;
 	color: #464262;
@@ -220,6 +234,7 @@ header {width:100%;}
 .block-footer .footer-menu {
 	float: left;
 	width: 60%;
+	padding-top: 10px;
 	padding-left: 20px;
 }
 
@@ -247,6 +262,7 @@ header {width:100%;}
 	font-family: 'LitteraPlainBook';
 	font-size: 25px;
 	line-height: 36px;
+	letter-spacing: 1px;
 	color: #fff;
 	text-align: left;
 }
@@ -263,7 +279,7 @@ header {width:100%;}
 	width: 25px;
 	height: 20px;
 	top: 9px;
-	left: 198px;
+	left: 223px;
 	background:	url("../images/svg/callback_footer.svg") 0 0 no-repeat;
 	cursor: pointer;
 }
@@ -275,10 +291,10 @@ header {width:100%;}
 }
 
 .block-footer .add-request-btn {
+	display: inline-block;
+	vertical-align: top;
 	position: relative;
-	padding: 0;
-	margin: 0;
-	width: 170px;
+	width: 168px;
 	height: 40px;
 	font-family: 'LitteraPlainBold';
 	font-size: 13px;
@@ -286,23 +302,31 @@ header {width:100%;}
 	text-transform: uppercase;
 	background-color: transparent;
 	border: 1px solid rgba(255, 255, 255, .5);
+	transition: all 1s;
+}
+
+.block-footer .add-request-btn:hover::before, .block-footer.add-request-btn:focus::before {
+	height: 40px;
 }
 
 .block-footer .add-request-btn span {
 	position: absolute;
 	top: 11px;
 	left: 22px;
-	width: 130px;
+	width: 127px;
 	z-index: 999;
+
 }
 
-.block-footer .add-request-btn .bg {
-	display: none;
+.block-footer .add-request-btn::before {
+	content: '';
 	position: absolute;
 	bottom: 0;
+	left: 0;
 	width: 100%;
-	height: 40px;
+	height: 0px;
 	background-color: #ffa500;
+	transition: all 1s;
 }
 
 /* ==========================================================================
@@ -310,21 +334,21 @@ header {width:100%;}
 	 ========================================================================== */
 
 main.errorpage {
-	min-height: 900px;
+	min-height: 890px;
 	background: #3d3639 url("../images/bg_image_404.jpg") center center no-repeat;
 	background-size: cover;
 }
 
 .block-errorpage {
-	padding-top: 87px;
+	padding-top: 86px;
 }
 
 .errorpage-wrapper {
-	padding-left: 101px;
+	padding-left: 100px;
 }
 
 .block-errorpage .errorpage-title {
-	margin-bottom: 37px;
+	margin-bottom: 40px;
 	font-family: 'LitteraPlainBold';
 	font-size: 66px;
 	line-height: 72px;
@@ -340,14 +364,14 @@ main.errorpage {
 	content: '';
 	width: 83px;
 	height: 6px;
-	top: 36px;
-	left: -106px;
+	top: 33px;
+	left: -112px;
 	background-color: #ffa500;
 }
 
 .block-errorpage .errorpage-description {
-	margin-bottom: 85px;
-	padding-right: 310px;
+	width: 758px;
+	margin-bottom: 47px;
 	font-family: 'LitteraPlainLight';
 	font-size: 24px;
 	line-height: 36px;
@@ -358,6 +382,9 @@ main.errorpage {
 	color: #ffa500;
 }
 
+.block-errorpage .errorpage-description a:hover{
+	text-decoration: underline;
+}
 
 .block-errorpage .errorpage-menu a{
 	font-family: 'LitteraPlainLight';
@@ -365,5 +392,19 @@ main.errorpage {
 	line-height: 36px;
 	color: #fff;
 }
+
+
+/* ==========================================================================
+	 Анимация >>>
+	 ========================================================================== */
+
+@keyframes request-btn-animation {
+		0% {
+			height: 0px;
+		}
+		100% { 
+			height: 40px;
+		}
+	}
 
 
