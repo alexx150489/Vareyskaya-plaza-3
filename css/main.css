@@ -31,7 +31,7 @@ input {outline:none;}
 main {min-height:100%;}
 .clear.clear-footer {height:100px;}
 .site-wrap {width: 1199px; margin: 0 auto; padding: 0 15px;}
-.container { min-width: 1199px; position: relative; min-height: 100%;}
+.container { min-width: 1199px; position: relative; min-height: 100%; background-color: #171524;}
 
 
 /* Header */
@@ -110,7 +110,7 @@ header {width:100%;}
 	 Начало CSS >>>
 	 ========================================================================== */
 /* ==========================================================================
-	 Header >>>
+	 block-header >>>
 	 ========================================================================== */
 .block-header .header-wrapper {
 	padding-top: 50px;
@@ -236,7 +236,7 @@ header {width:100%;}
 
 
 /* ==========================================================================
-	 Footer >>>
+	block-footer >>>
 	 ========================================================================== */
 .block-footer {
 	background-color: #171524;
@@ -245,6 +245,10 @@ header {width:100%;}
 .block-footer .footer-wrapper {
 	padding-top: 101px;
 	padding-bottom: 30px;
+}
+
+.block-footer.event .footer-wrapper {
+	padding-top: 69px;
 }
 
 .block-footer .column-left {
@@ -387,7 +391,7 @@ header {width:100%;}
 }
 
 /* ==========================================================================
-	 404 Page >>>
+	 block-errorpage >>>
 	 ========================================================================== */
 
 main.errorpage {
@@ -454,7 +458,7 @@ main.errorpage {
 }
 
 /* ==========================================================================
-	 Events Page >>>
+	 block-events >>>
 	 ========================================================================== */
 
 .block-events {
@@ -615,6 +619,7 @@ main.errorpage {
 /* ==========================================================================
 	 block-subscribe >>>
 	 ========================================================================== */
+
 .block-subscribe {
 	text-align: center;
 }
@@ -686,4 +691,150 @@ main.errorpage {
 	font-size: 16px;
 	line-height: 29px;
 	color: #171524;
+}
+
+
+/* ==========================================================================
+	 block-event >>>
+	 ========================================================================== */
+
+.bg-wrapper.event {
+	min-height: 485px;
+	background: #171524 url("../images/cover_image_event_detail.jpg") center right no-repeat;
+	background-size: cover;
+}
+
+.block-event {
+	padding-bottom: 51px;
+	background-color: #171524;
+	border-bottom: 1px solid #504e57;
+}
+
+.main-page-title.event {
+	padding-top: 87px;
+	padding-left: 97px;
+}
+
+.block-event .event-main {
+	display: block;
+	padding-bottom: 65px;
+	position: relative;
+	width: 100%;
+}
+
+.block-event .event-main-image {
+	position: absolute;
+	top: -38px;
+	right: 0;
+	width: 50%;
+	text-align: right;
+}
+
+.block-event .event-main-text {
+	float: left;
+	padding-top: 36px;
+	padding-right: 10px;
+	width: 50%;
+}
+
+.block-event .event-main-title {
+	margin-bottom: 25px;
+	font-family: 'LitteraPlainBold';
+	font-size: 36px;
+	line-height: 44px;
+	color: #ffa500;
+}
+
+.block-event .event-main-description {
+	font-family: 'LitteraPlainLight';
+	font-size: 24px;
+	line-height: 36px;
+	color: #ffffff;
+	margin-bottom: 8px;
+}
+
+.block-event .event-main-date {
+	font-family: 'LitteraPlainLight';
+	font-size: 18px;
+	line-height: 48px;
+	color: #504b6e;
+}
+
+.block-event .event-text {
+	margin-bottom: 74px;
+	font-family: 'LitteraPlainLight';
+	font-size: 18px;
+	line-height: 28px;
+	color: #fff;
+}
+
+.block-event .event-text p{
+	margin-bottom: 28px;
+}
+
+.block-event .event-navigation {
+	font-size: 0;
+}
+
+.block-event .event-navigation .btn{
+	font-family: 'LitteraPlainBold';
+	font-size: 18px;
+	line-height: 28px;
+	color: #fff;
+	display: inline-block;
+	vertical-align: top;
+	width: 33.33333333%;
+	transition: all .3s ease-in;
+}
+
+.block-event .event-navigation .prev-btn {
+	position: relative;
+	text-align: left;
+	padding-left: 60px;
+}
+
+.block-event .event-navigation .prev-btn span {
+	position: relative;
+}
+
+.block-event .event-navigation .prev-btn span {
+	position: relative;
+}
+
+.block-event .event-navigation .prev-btn span::after {
+	position: absolute;
+	content: '';
+	width: 30px;
+	height: 6px;
+	top: 9px;
+	left: -61px;
+	background: url("../images/svg/arow_left.svg") 0 0 no-repeat;
+}
+
+.block-event .event-navigation .show-all-btn {
+	text-align: center;
+}
+
+.block-event .event-navigation .next-btn {
+	position: relative;
+	text-align: right;
+	padding-right: 60px;
+}
+
+.block-event .event-navigation .next-btn span {
+	position: relative;
+}
+
+.block-event .event-navigation .next-btn span::after {
+	position: absolute;
+	content: '';
+	width: 30px;
+	height: 6px;
+	top: 9px;
+	right: -61px;
+	background: url("../images/svg/arow_right.svg") 0 0 no-repeat;
+}
+
+.block-event .event-navigation .btn:hover {
+	color: #ffa500;
 }
