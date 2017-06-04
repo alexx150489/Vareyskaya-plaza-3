@@ -557,6 +557,10 @@ main.errorpage {
 	background-color: #ffa500;
 }
 
+.events-item:hover .item-wrapper .date{
+	color: #fff;
+}
+
 .events-item .text {
 	margin-bottom: 28px;
 	color: #ffffff;
