@@ -31,7 +31,7 @@ input {outline:none;}
 main {min-height:100%;}
 .clear.clear-footer {height:100px;}
 .site-wrap {width: 1199px; margin: 0 auto; padding: 0 15px;}
-.container { min-width: 1199px; position: relative; min-height: 100%; background-color: #171524;}
+.container { min-width: 1199px; position: relative; min-height: 100%;}
 
 
 /* Header */
@@ -530,12 +530,15 @@ main.errorpage {
 	font-size: 0;
 }
 
+.items-row {
+	margin-bottom: 60px;
+}
+
 .events-items .events-item {
 	display: inline-block;
 	vertical-align: top;
 	width: 32%;
 	margin-right: 2%;
-	margin-bottom: 60px;
 	font-family: 'LitteraPlainLight';
 	font-size: 16px;
 	line-height: 28px;
@@ -621,6 +624,7 @@ main.errorpage {
 	 ========================================================================== */
 
 .block-subscribe {
+	min-height: 230px;
 	text-align: center;
 }
 
@@ -668,7 +672,6 @@ main.errorpage {
 }
 
 .block-subscribe .subscribe-success-wrapper {
-	display: none;
 	padding-top: 61px;
 	padding-bottom: 68px;
 }
