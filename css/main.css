@@ -568,6 +568,7 @@ main.errorpage {
 
 .events-item .date {
 	color: #504b6e;
+	transition: all .3s ease-in;
 }
 
 
