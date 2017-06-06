@@ -260,6 +260,10 @@ header {width:100%;}
 	padding-top: 71px;
 }
 
+.block-footer.mainPage .footer-wrapper {
+	padding-top: 71px;
+}
+
 .block-footer .column-left {
 	float: left;
 	width: 60%;
@@ -1224,4 +1228,366 @@ main.errorpage {
 
 .location-description .description-text {
 	padding: 2px 85px 82px 69px;
+}
+
+/* ==========================================================================
+	 block-mainPage >>>
+	 ========================================================================== */
+
+.first-screen.main-page {
+	height:100vh;
+	min-height: 900px;
+	background: #171524 url("../images/top_image.jpg") 0 0 no-repeat;
+}
+
+.main-page-title.mainPage {
+	width: 1035px;
+	text-indent: 102px;
+}
+
+.main-page-title.mainPage {
+	padding-top: 85px;
+}
+
+.main-page-title.mainPage h1{
+	display: inline;
+	line-height: 74px;
+}
+
+.main-page-title.mainPage span{
+	padding-left: 10px;
+	font-family: 'LitteraPlainLight';
+	display: inline;
+	font-size: 66px;
+	line-height: 72px;
+	color: #fff;
+}
+
+
+
+/* ==========================================================================
+	 block-sectionLinks >>>
+	========================================================================== */
+
+.block-sectionLinks {
+	background-color: #171524;
+}
+
+.section-links-wrapper {
+	font-size: 0;
+}
+
+.block-sectionLinks .lease-office {
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	min-height: 700px;
+	background: #171524 url("../images/rent_offices.jpg") 0 0 no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.block-sectionLinks .lease-retail {
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	min-height: 700px;
+	background: #171524 url("../images/rent_retai.jpg") 0 0 no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.lease-retail .title {
+	position: relative;
+	padding-top: 315px;
+	width: 366px;
+	margin: 0 auto;
+	font-family: 'LitteraPlainBold';
+	font-size: 48px;
+	line-height: 72px;
+	color: #fff;
+}
+
+.lease-office .title {
+	position: relative;
+	padding-top: 315px;
+	width: 360px;
+	margin: 0 auto;
+	font-family: 'LitteraPlainBold';
+	font-size: 48px;
+	line-height: 72px;
+	color: #fff;
+}
+
+.link .title span {
+	position: relative;
+}
+
+.link .title span::after {
+	content: '';
+	position: absolute;
+	content: '';
+	width: 50px;
+	height: 4px;
+	top: 28px;
+	left: -81px;
+	background-color: #ffa500;
+}
+
+
+
+/* ==========================================================================
+	 block-mainPageFeatures >>>
+	 ========================================================================== */
+
+.mainPageFeatures-wrapper {
+	font-size: 0;
+}
+
+.feature-item {
+	display: inline-block;
+	vertical-align: top;
+	width: 25%;
+	font-family: 'LitteraPlainLight';
+	font-size: 24px;
+	line-height: 36px;
+	color: #fff;
+}
+
+.feature-item-text {
+	padding-top: 134px;
+}
+
+.feature-item .feature-item-text {
+	position: relative;
+}
+
+.feature-item.plans .feature-item-text {
+	padding-right: 90px;
+}
+
+.feature-item.organisation .feature-item-text {
+	padding-right: 28px;
+	padding-left: 16px;
+}
+
+.feature-item.comfort .feature-item-text {
+	padding-left: 37px;
+}
+
+.feature-item.lights .feature-item-text {
+	padding-left: 50px;
+}
+
+.feature-item.plans .feature-item-text .plans-icon {
+	position: absolute;
+	content: '';
+	width: 80px;
+	height: 49px;
+	top: 55px;
+	left: 0;
+}
+
+.feature-item.organisation .feature-item-text .organisation-icon {
+	position: absolute;
+	content: '';
+	width: 80px;
+	height: 71px;
+	top: 34px;
+	left: 21px;
+}
+
+.feature-item.comfort .feature-item-text .comfort-icon {
+	position: absolute;
+	content: '';
+	width: 80px;
+	height: 80px;
+	top: 25px;
+	left: 39px;
+}
+
+.feature-item.lights .feature-item-text .lights-icon {
+	position: absolute;
+	content: '';
+	width: 56px;
+	height: 70px;
+	top: 33px;
+	left: 53px;
+}
+
+/* ==========================================================================
+	 block-scrollDown >>>
+	 ========================================================================== */
+.block-scrollDown {
+	padding-top: 42px;
+	text-align: center;
+}
+.block-scrollDown .scrollDown-text {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 70px;
+	font-family: 'LitteraPlainBold';
+	font-size: 13px;
+	line-height: 36px;
+	color: #ffa500;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.block-scrollDown .scrollDown-text::after {
+	position: absolute;
+	content: '';
+	width: 24px;
+	height: 55px;
+	top: 12px;
+	left: 51px;
+	background:	url("../images/svg/scroll.svg") 0 0 no-repeat;
+}
+
+/* ==========================================================================
+	 block-eventsAndActions >>>
+	 ========================================================================== */
+
+.block-eventsAndActions {
+	padding-top: 118px;
+	padding-bottom: 115px;
+	background-color: #171524;
+	border-bottom: 1px solid #504e57;
+	overflow-x: hidden;
+}
+
+.eventsAndActions-wrapper {
+	position: relative;
+}
+
+.block-eventsAndActions .eventsAndActions-title {
+	position: relative;
+	width: 460px;
+	font-family: 'LitteraPlainBold';
+	margin-bottom: 4px;
+	padding-left: 65px;
+	font-size: 48px;
+	line-height: 72px;
+	color: #fff;
+}
+.block-eventsAndActions .eventsAndActions-title::after {
+	position: absolute;
+	content: '';
+	width: 50px;
+	height: 4px;
+	top: 36px;
+	left: 0;
+	background-color: #ffa500;
+}
+
+
+.block-eventsAndActions .eventsAndActions-filters{
+			padding-left: 68px;
+	font-size: 0;
+}
+
+.block-eventsAndActions .eventsAndActions-filters .filter{
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 34px;
+	font-family: 'LitteraPlainBold';
+	font-size: 13px;
+	line-height: 36px;
+	color: #fff;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.block-eventsAndActions .eventsAndActions-filters .filter.active {
+	color: #ffa500;
+}
+
+.block-eventsAndActions .type {
+	margin-bottom: 10px;
+	font-family: 'LitteraPlainLight';
+	font-size: 14px;
+	line-height: 40px;
+	color: #ccbfa9;
+	text-transform: uppercase;
+}
+
+
+.block-eventsAndActions .text {
+	margin-bottom: 5px;
+	font-family: 'LitteraPlainLight';
+	font-size: 16px;
+	line-height: 28px;
+	color: #fff;
+}
+
+.block-eventsAndActions .date {
+	font-family: 'LitteraPlainLight';
+	font-size: 18px;
+	line-height: 40px;
+	color: #565176;
+}
+
+.slide-text-wrapper {
+	padding: 25px 10px 13px 29px;
+}
+
+.block-eventsAndActions .eventsAndActions-slider {
+	padding-top: 40px;
+}
+
+
+.block-eventsAndActions .eventsAndActions-slider .slide {
+	width: 370px;
+	margin-right: 26px;
+	cursor: pointer;
+}
+
+.block-eventsAndActions .slide:hover .slide-text-wrapper {
+	background-color: #ffa500;
+}
+
+.block-eventsAndActions .slide:hover .type {
+	color: #fff;
+}
+
+
+.eventsAndActions-slider-prev {
+	position: absolute;
+	width: 48px;
+	height: 10px;
+	top: 32px;
+	right: 84px;
+	background: url("../images/svg/arow_left.svg") 0 0 no-repeat;
+	z-index: 999;
+	cursor: pointer;
+}
+
+.eventsAndActions-slider-next {
+	position: absolute;
+	width: 48px;
+	height: 10px;
+	top: 32px;
+	right: 0px;
+	background: url("../images/svg/arow_right.svg") 0 0 no-repeat;
+	z-index: 999;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+	 slick.js >>>
+	 ========================================================================== */
+
+.eventsAndActions-slider {
+	margin-right: -367px;
 }

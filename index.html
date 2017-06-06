@@ -1,432 +1,257 @@
 <!doctype html>
 <html class="no-js" lang="ru">
 	<head>
-		<title>Главная</title>
+		<title>Главная страница</title>
 
 		<meta charset="utf-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">	
 		<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="js/vendor/fancybox/jquery.fancybox.css">
 		<link rel="stylesheet" href="css/fonts.css">
 		<link rel="stylesheet" href="css/slick.js/slick.css">
 		<link rel="stylesheet" href="css/slick.js/slick-theme.css">
+
 		<link rel="stylesheet" href="css/css3.css">
 		<link rel="stylesheet" href="css/main.css">
-		
-		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+
 		<script src="js/vendor/jquery-3.2.0.min.js"></script>
+		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+		<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+		<script src="js/vendor/google-map.js"></script>
 		<script src="js/vendor/jquery-migrate-1.4.1.min.js"></script>
 		<script src="js/vendor/jquery.form.min.js"></script>
 		<script src="js/vendor/fancybox/jquery.fancybox.pack.js"></script>
 		<script src="js/vendor/slick.js/slick.min.js"></script>
 		<script src="js/main.js"></script>
+
+
 	</head>
 	
 	<body>
+		<div class="container">
+		<div class="block-mainPage">
 
-	<div class="container">
-		<main>
+			<div class="first-screen main-page">
+				<!--HEADER-->
+				<header class="block-header">
+					<div class="site-wrap">
+						<div class="header-wrapper clearfix">
+							<a class="header-logotype" href="#">
+								<img src="images/svg/logo.svg" alt="Логотип" width="285" height="83">
+							</a>
+							<div class="header-tel">
+								<span><a href="tel:+74952121559">+7 (495) 212-15-59</a></span>
+								<span class="header-tel-callback"></span>
+							</div>
+							<div class="header-add-request">
+								<a class="add-request-btn default-btn" href="#">
+									<span>Отправить заявку</span>
+								</a>
+							</div>
+							<div class="header-burder">
+								<div class="burger-btn">
+									<div class="line1"></div>
+									<div class="line2"></div>
+									<div class="line3"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+				<!--HEADER-END-->
 
-			<!--HEADER-->
-			<header class="block-header">
+				<!--MAIN-PAGE-TITLE-->
 				<div class="site-wrap">
-					<div class="header-wrapper clearfix">
-						<div class="header-logo-wrapper">
-							<div class="header-logo">
-								<a href="#"><img src="images/logo.png" width="161" height="57" alt="Логотип" /></a>
-							</div>
-							<div id="header-tel-js" class="header-tel">+7 (495) 266-79-58</div>
-						</div>
-						<div class="header-buttons-wrapper clearfix">
-							<a class="header-search-icon" href="#"></a>
-							<a id="close-icon-js" class="header-close-icon"></a>
-							<a id="burger-icon-js" class="header-burger-icon"></a>
-						</div>
-
-						<nav id="navigation-js" class="header-navigation">
-							<ul class="header-navigation-menu">
-								<li class="menu-item"><a class="menu-link" href="#">Процедуры</a></li>
-								<li class="menu-item"><a class="menu-link" href="#">О клиниках</a></li>
-								<li class="menu-item"><a class="menu-link" href="#">Акции</a></li>
-								<li class="menu-item"><a class="menu-link" href="#">Новости</a></li>
-								<li class="menu-item"><a class="menu-link" href="#">Отзывы</a></li>
-								<li class="menu-item"><a class="menu-link" href="#">Контакты</a></li>
-								<li class="menu-item"><a class="menu-link" href="#">Цены</a></li>
-								<li class="menu-item"><a class="menu-link" href="#">Сми о нас</a></li>
-							</ul>
-							<div class="header-contacts">
-								<div class="header-contacts-towns">
-									<span class="header-contacts-town active menu-town-js">Москва</span> / <span class="header-contacts-town menu-town-js">Екатеринбург</span>
-								</div>
-								<div class="header-contacts-tel msk menu-tel-js"><span>+7 (495) 266 79 57</span></div>
-								<div class="header-contacts-tel ekb menu-tel-js"><span>+7 (343) 302 2376</span></div>
-							</div>
-						</nav>
-					</div>
-
-				</div>
-			</header>
-			<!--HEADER-END-->
-
-			<section class="block-content">
-				
-
-					<section class="block-main">
-
-						<div class="block-main-slider">
-							<div class="main-slider-wrapper main-slider-js">
-
-								<div class="slide">
-									<h2 class="main-slider-title">Авторские клиники Натальи Михайловой</h2>
-									<div class="main-slider-image">
-										<img src="images/main-slider-photo.jpg" alt="Слайд" width="320" height="386">
-									</div>
-								</div>
-
-								<div class="slide">
-									<h2 class="main-slider-title">Авторские клиники Натальи Михайловой</h2>
-									<div class="main-slider-image">
-										<img src="images/main-slider-photo.jpg" alt="Слайд" width="320" height="386">
-									</div>
-								</div>
-
-								<div class="slide">
-									<h2 class="main-slider-title">Авторские клиники Натальи Михайловой</h2>
-									<div class="main-slider-image">
-										<img src="images/main-slider-photo.jpg" alt="Слайд" width="320" height="386">
-									</div>
-								</div>
-
-								<div class="slide">
-									<h2 class="main-slider-title">Авторские клиники Натальи Михайловой</h2>
-									<div class="main-slider-image">
-										<img src="images/main-slider-photo.jpg" alt="Слайд" width="320" height="386">
-									</div>
-								</div>
-
-								<div class="slide">
-									<h2 class="main-slider-title">Авторские клиники Натальи Михайловой</h2>
-									<div class="main-slider-image">
-										<img src="images/main-slider-photo.jpg" alt="Слайд" width="320" height="386">
-									</div>
-								</div>
-
-								<div class="slide">
-									<h2 class="main-slider-title">Авторские клиники Натальи Михайловой</h2>
-									<div class="main-slider-image">
-										<img src="images/main-slider-photo.jpg" alt="Слайд" width="320" height="386">
-									</div>
-								</div>
-
-								<div class="slide">
-									<h2 class="main-slider-title">Авторские клиники Натальи Михайловой</h2>
-									<div class="main-slider-image">
-										<img src="images/main-slider-photo.jpg" alt="Слайд" width="320" height="386">
-									</div>
-								</div>
-
-								<div class="slide">
-									<h2 class="main-slider-title">Авторские клиники Натальи Михайловой</h2>
-									<div class="main-slider-image">
-										<img src="images/main-slider-photo.jpg" alt="Слайд" width="320" height="386">
-									</div>
-								</div>
-								
-							</div>
-						</div>
-						<div class="site-wrap">
-							<section class="block-services">
-								<h2 class="services-title title">Выберете направление услуг</h2>
-								<div class="services-items">
-									<a class="services-item" href="#">
-										<div class="services-item-image section1"></div>
-										<h3 class="services-item-title">Пластическая хирургия</h3>
-									</a>
-									<a class="services-item column2" href="#">
-										<div class="services-item-image section2"></div>
-										<h3 class="services-item-title">Аппаратная косметология</h3>
-									</a>
-									<a class="services-item" href="#">
-										<div class="services-item-image section3"></div>
-										<h3 class="services-item-title">Лазерный центр</h3>
-									</a>
-									<a class="services-item column2" href="#">
-										<div class="services-item-image section4"></div>
-										<h3 class="services-item-title">Инъекционная косметология</h3>
-									</a>
-									<a class="services-item" href="#">
-										<div class="services-item-image section5"></div>
-										<h3 class="services-item-title">Эстетическая косметология</h3>
-									</a>
-									<a class="services-item column2" href="#">
-										<div class="services-item-image section6"></div>
-										<h3 class="services-item-title">Подология</h3>
-									</a>
-								</div>
-							</section>
-
-							<section id="block-model" class="block-model">
-								<h2 class="model-title title">Я хочу</h2>
-								<div class="model-image">
-
-									<div class="model-point point1 model-point-js">
-										<span class="line"></span>
-										<a id="lin123" class="link" href="#">Остановить выпадение волос</a>
-									</div>
-
-									<div class="model-point point2 model-point-js">
-										<span class="line"></span>
-										<a class="link" href="#">Убрать морщины</a>
-									</div>
-
-									<div class="model-point point3 model-point-js">
-										<span class="line"></span>
-										<a class="link" href="#">Омолодить лицо</a>
-									</div>
-
-									<div class="model-point point4 model-point-js">
-										<span class="line"></span>
-										<a class="link" href="#">Подтянуть кожу лица и шеи</a>
-									</div>
-
-									<div class="model-point point5 model-point-js">
-										<span class="line"></span>
-										<a class="link" href="#">Вылечить прыщи и угри</a>
-									</div>
-
-									<div class="model-point point6 model-point-js">
-										<span class="line"></span>
-										<a class="link" href="#">Избавиться от пота</a>
-									</div>
-
-									<div class="model-point point7 model-point-js">
-										<span class="line"></span>
-										<a class="link" href="#">Убрать пигментные пятна</a>
-									</div>
-
-									<div class="model-point point8 model-point-js">
-										<span class="line"></span>
-										<a class="link" href="#">Убрать рубцы, шрамы и растяжки</a>
-									</div>
-
-									<div class="model-point point9 model-point-js">
-										<span class="line"></span>
-										<a class="link" href="#">Убрать лишний вес</a>
-									</div>
-
-									<div class="model-point point10 model0-point-js">
-										<span class="line"></span>
-										<a class="link" href="#">Избавиться от целлюлита</a>
-									</div>
-
-									<div class="model-point point11 model-point-js">
-										<span class="line"></span>
-										<a class="link" href="#">Убрать сосудистые звездочки</a>
-									</div>
-
-									<div class="model-point point12 model-point-js">
-										<span class="line"></span>
-										<a class="link" href="#">Удалить волосы</a>
-									</div>
-
-									<div class="model-point point13 model-point-js">
-										<span class="line"></span>
-										<a class="link" href="#">Вылечить вросший ноготь</a>
-									</div>
-
-									<div class="model-point point14 model-point-js">
-										<span class="line"></span>
-										<a class="link" href="#">Удалить татуировку</a>
-									</div>
-
-								</div>
-								<a class="model-link" href="#">О Клиниках</a>
-							</section>
-
-							<div class="block-actions-slider">
-								<h2 class="actions-slider-title title">Акции<br> и спецпредложения</h2>
-
-								<div class="actions-slider-wrapper actions-slider-js">
-
-									<div class="slide">
-										<div class="slide-image"></div>
-										<h2 class="slide-title">Авторский метод одномоментного лифтинга лица и подтяжки шеи на аппарате Cynosure Smartlipo TriPlex всего за 49 900 руб.</h2>
-										<time class="slide-date" datetime="2017-03-01">01.03.2017</time>
-									</div>
-
-									<div class="slide">
-										<div class="slide-image"></div>
-										<h2 class="slide-title">Авторский метод одномоментного лифтинга лица и подтяжки шеи на аппарате Cynosure Smartlipo TriPlex всего за 49 900 руб.</h2>
-										<time class="slide-date" datetime="2017-03-01">01.03.2017</time>
-									</div>
-
-									<div class="slide">
-										<div class="slide-image"></div>
-										<h2 class="slide-title">Авторский метод одномоментного лифтинга лица и подтяжки шеи на аппарате Cynosure Smartlipo TriPlex всего за 49 900 руб.</h2>
-										<time class="slide-date" datetime="2017-03-01">01.03.2017</time>
-									</div>
-
-									<div class="slide">
-										<div class="slide-image"></div>
-										<h2 class="slide-title">Авторский метод одномоментного лифтинга лица и подтяжки шеи на аппарате Cynosure Smartlipo TriPlex всего за 49 900 руб.</h2>
-										<time class="slide-date" datetime="2017-03-01">01.03.2017</time>
-									</div>
-									
-								</div>
-
-								<a class="actions-slider-show-all button" href="#">Все акции и спецпредложения</a>
-							</div>
-
-							<div class="content-links-wrapper">
-								<a href="#">Бутик</a>
-								<a href="#">Медиа</a>
-							</div>
-
-					<section class="block-contacts">
-						<h2 class="contacts-title title">Контакты</h2>
-						<div class="contacts-wrapper">
-							<div class="contacts-town-switcher">
-								<div class="contacts-town active msk">Москва</div>
-								<div class="contacts-town ekb">Екатеринбург</div>
-							</div>
-
-							<div class="contacts-location msk">
-								<div class="contacts-station active taganskaya">Таганская</div>
-								<div class="contacts-station novoslobodskaya">Новослободская</div>
-							</div>
-
-							<div class="contacts-location ekb">
-								<div class="contacts-station active">ул. Маршала Жукова</div>
-							</div>
-
-							<div class="contacts-info novoslobodskaya">
-								<div class="contacts-adress"><span>ул. Краснопролетарская д. 16, стр. 11</span><a href="">Схема</a></div>
-								<div class="contacts-working-hours"><span>пнд-вскр 9:00 - 21:00</span></div>
-								<div class="contacts-tel"><span>+7 (495) 266-79-56</span></div>
-							</div>
-
-							<div class="contacts-info taganskaya">
-								<div class="contacts-adress"><span>Пестовский пер. д. 5</span><a href="">Схема</a></div>
-								<div class="contacts-working-hours"><span>пнд-вскр 9:00 - 21:00</span></div>
-								<div class="contacts-tel"><span>+7 (495) 266-79-56</span></div>
-							</div>
-
-							<div class="contacts-info ekb">
-								<div class="contacts-adress"><span>ул. Маршала Жукова, д. 13</span><a href="">Схема</a></div>
-								<div class="contacts-working-hours"><span>пнд-вскр 9:00 - 21:00</span></div>
-								<div class="contacts-tel"><span>+7 (495) 266-79-56</span></div>
-							</div>
-
-							<div class="contacts-map taganskaya">
-								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.739820560401!2d37.657252615930254!3d55.74564948055145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54ae94d6faf05%3A0x5ceb8230678431bb!2z0J_QtdGB0YLQvtCy0YHQutC40Lkg0L_QtdGALiwgNSwg0JzQvtGB0LrQstCwLCAxMDkwMDQ!5e0!3m2!1sru!2sru!4v1493530333661" allowfullscreen></iframe>
-							</div>
-
-							<div class="contacts-map novoslobodskaya">
-								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.8489636523545!2d37.60462231593153!3d55.778494980560275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a114adced89%3A0x614181a7fb90d34c!2z0JrRgNCw0YHQvdC-0L_RgNC-0LvQtdGC0LDRgNGB0LrQsNGPINGD0LsuLCAxNtGBMTEsINCc0L7RgdC60LLQsCwgMTI3NDcz!5e0!3m2!1sru!2sru!4v1494865076976" allowfullscreen></iframe>
-							</div>
-
-							<div class="contacts-map ekb">
-								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2182.2316680303024!2d60.58164431626742!3d56.841969980858686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c16e5e83e8b995%3A0x9970d6f90687a37!2z0YPQuy4g0JzQsNGA0YjQsNC70LAg0JbRg9C60L7QstCwLCAxMywg0JXQutCw0YLQtdGA0LjQvdCx0YPRgNCzLCDQodCy0LXRgNC00LvQvtCy0YHQutCw0Y8g0L7QsdC7LiwgNjIwMDE0!5e0!3m2!1sru!2sru!4v1494865163414" allowfullscreen></iframe>
-							</div>
-
-
-						</div>
-					</section>
-
-
-							<a class="content-appointment button appointment-js" href="#show">Записаться на приём</a>
-						</div>
-					</section>
-
-				
-
-				<div class="block-modal-appointment" id="show">
-					<div class="modal-appointment-wrapper">
-						<div class="modal-appointment-title">Записаться на прием</div>
-						<form class="modal-appointment-form" name="appointment-form" method="post" action="#">
-							<div class="modal-appointment-close"></div>
-							<div class="form-group">
-								<input class="modal-appointment-name form-element" name="appointment-name" type="text" tabindex="1" placeholder="Имя">
-								<input class="modal-appointment-tel form-element" name="appointment-tel" type="tel" tabindex="2" placeholder="Телефон">
-								<select class="modal-appointment-procedure form-element" name="appointment-procedure" tabindex="3">
-									<option value="" disabled selected style='display:none;'>Специализация</option>
-									<option value="filter-specialization">Значение 1</option>
-									<option value="filter-specialization">Значение 2</option>
-								</select>
-							</div>
-							<div class="form-group clearfix">
-								<select class="modal-appointment-date form-element" name="appointment-date" tabindex="4">
-									<option value="" disabled selected style='display:none;'>Дата</option>
-									<option value="filter-specialization">Значение 1</option>
-									<option value="filter-specialization">Значение 2</option>
-								</select>
-								<select class="modal-appointment-time form-element" name="appointment-time" tabindex="5">
-									<option value="" disabled selected style='display:none;'>Время</option>
-									<option value="filter-specialization">Значение 1</option>
-									<option value="filter-specialization">Значение 2</option>
-								</select>
-							</div>
-							<div class="form-group clearfix">
-								<div class="modal-appointment-tip"><span>*</span> - Обязательные для заполнения поля</div>
-								<button class="modal-appointment-submit" name="appointment-submit" type="submit">Отправить</button>
-							</div>
-						</form>
+					<div class="main-page-title mainPage">
+						<h1>Новое бизнес-пространство класса B+</h1> <span>в известном деловом квартале<span>
 					</div>
 				</div>
+				<!--MAIN-PAGE-TITLE-END-->
 
-			</section>
 
-		</main>
+				<div class="block-mainPageFeatures">
+					<div class="site-wrap">
+						<div class="mainPageFeatures-wrapper">
+							<div class="feature-item plans">
+								<div class="feature-item-text">
+									<p>Эффективные планировочные решения</p>
+									<div class="plans-icon">
+										<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 49"><defs><style>.cls-1{fill:#fff;}</style></defs><title>plans</title><path class="cls-1" d="M8.1,49a8.1,8.1,0,1,1,8.1-8.1A8.07,8.07,0,0,1,8.1,49Zm0-14a5.9,5.9,0,0,0,0,11.8A6,6,0,0,0,14,40.9,5.85,5.85,0,0,0,8.1,35Z"/><path class="cls-1" d="M71.9,49A8.1,8.1,0,1,1,80,40.9,8.07,8.07,0,0,1,71.9,49Zm0-14a5.9,5.9,0,1,0,0,11.8,6,6,0,0,0,5.9-5.9A5.91,5.91,0,0,0,71.9,35Z"/><path class="cls-1" d="M21,23.9a1.09,1.09,0,0,1,0,1.5,1.22,1.22,0,0,1-1.6,0l-3.9-3.9-3.9,3.9a1.22,1.22,0,0,1-1.6,0,1.09,1.09,0,0,1,0-1.5L13.9,20,10,16.1a1.06,1.06,0,0,1,1.5-1.5l3.9,3.9,3.9-3.9a1.06,1.06,0,0,1,1.5,1.5L17.1,20Z"/><path class="cls-1" d="M45.6,23.9a1.09,1.09,0,0,1,0,1.5,1.22,1.22,0,0,1-1.6,0l-3.9-3.9-3.9,3.9a1.22,1.22,0,0,1-1.6,0,1.09,1.09,0,0,1,0-1.5L38.5,20l-3.9-3.9a1.06,1.06,0,0,1,1.5-1.5L40,18.5l3.9-3.9a1.06,1.06,0,0,1,1.5,1.5L41.7,20Z"/><path class="cls-1" d="M63.1.4,51.8,0a1.11,1.11,0,0,0-1.1,1.1l-.4,11.3a1,1,0,0,0,1.1,1.1h0a1.11,1.11,0,0,0,1.1-1.1l.3-8.7,1.8,1.9a20.35,20.35,0,0,1-1,28.7A19.64,19.64,0,0,1,40,39.7a8.09,8.09,0,1,0-8,9.2,8.09,8.09,0,0,0,8-7,23,23,0,0,0,15.1-6A22.46,22.46,0,0,0,56.2,4.1L54.4,2.2l8.6.4a1,1,0,0,0,1.1-1C64.1.9,63.7.4,63.1.4ZM37.8,40.9A5.9,5.9,0,1,1,31.9,35a5.85,5.85,0,0,1,5.9,5.9Z"/></svg>
+									</div>
+								</div>
+							</div>
+							<div class="feature-item organisation">
+								<div class="feature-item-text">
+									<p>Нестандартный подход к организации внутреннего пространства</p>
+									<div class="organisation-icon">
+										<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 70.7"><defs><style>.cls-1{fill:#fff;}</style></defs><title>organisation</title><path class="cls-1" d="M79.1-.7H.9A.9.9,0,0,0,0,.2V69.1a.9.9,0,0,0,.9.9H79.1a1,1,0,0,0,.9-.9V.1A.88.88,0,0,0,79.1-.7Zm-38.3,47v-.2a1,1,0,0,0-.9-.9H31.1a.72.72,0,0,0-.7.4.75.75,0,0,0-.4.7V61.9a11.28,11.28,0,0,1-8.1-3.5c-4.3-4.5-3.7-12.1-3.7-12.2a1,1,0,0,0-.6-.9,1.69,1.69,0,0,0-.5-.2H15.9v-12H20a1,1,0,0,0,.9-.9.9.9,0,0,0-.9-.9H1.7V16.8H28.4a1,1,0,0,0,.9-.9V1H39.5a.65.65,0,0,0-.2.5v9.6a1,1,0,0,0,.9.9h15c-.2,3.5-1.3,6.3-3.5,8.3-4.4,4.1-11.6,3.6-11.6,3.6a1,1,0,0,0-.9.8c0,.2,0,.3.1.4V39.9a1,1,0,0,0,.9.9.9.9,0,0,0,.9-.9V35.5H78.5V49.2H58a1,1,0,0,0-.9.9V68.2H40.9V46.4A.1.1,0,0,0,40.8,46.3ZM1.9,45.2H1.7v-12H14v12Zm56.9,7.1,8.6,7.3-8.6,7.3Zm1.1-1.4H77.8l-8.9,7.6Zm8.9,9.9,8.8,7.5H60Zm1.3-1.2,8.2-6.9v14Zm8.2-25.9H40.9V25.4c2.3,0,7.9-.4,11.9-4.1,2.7-2.5,4-6,4-10.4a1,1,0,0,0-.9-.9h-15V1.5a.76.76,0,0,0-.2-.5H78.4l-.1,32.7ZM27.5,1V6.2c-.1,0-.2-.1-.3-.1H17.9A.84.84,0,0,0,17,7a1,1,0,0,0,.9.9h9.3a.37.37,0,0,0,.3-.1v2.4c-.1,0-.2-.1-.3-.1H17.9a1,1,0,0,0-.9.9,1,1,0,0,0,.9.9h9.3a.37.37,0,0,0,.3-.1v3.3H1.7V1ZM1.7,46.9H16.4c0,2.1.3,8.4,4.3,12.7,2.5,2.7,6,4,10.2,4a1,1,0,0,0,.9-.9V46.9h7.4V68.2H1.7Z" transform="translate(0 0.7)"/><path class="cls-1" d="M8.3,12.5h3.5a3,3,0,0,0,3-3V7.3a3,3,0,0,0-3-3H8.3a3,3,0,0,0-3,3V9.4A3,3,0,0,0,8.3,12.5ZM6.9,7.3A1.42,1.42,0,0,1,8.3,6h3.5a1.32,1.32,0,0,1,1.3,1.3V9.4a1.32,1.32,0,0,1-1.3,1.3H8.3A1.32,1.32,0,0,1,7,9.4,14.08,14.08,0,0,1,6.9,7.3Z" transform="translate(0 0.7)"/></svg>
+									</div>
+								</div>
+							</div>
+							<div class="feature-item comfort">
+								<div class="feature-item-text">
+									<p>Комфортная рабочая атмосфера</p>
+									<div class="comfort-icon">
+										<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 79.9 80"><defs><style>.cls-1{fill:#fff;}</style></defs><title>comfort</title><path class="cls-1" d="M19,37.3a.9.9,0,0,1,0,1.8H13.8a.9.9,0,0,1,0-1.8Z"/><path class="cls-1" d="M19,52.4a.9.9,0,0,1,0,1.8H13.8a.9.9,0,0,1,0-1.8Z"/><path class="cls-1" d="M19,67.6a.9.9,0,0,1,0,1.8H13.8a.9.9,0,0,1,0-1.8Z"/><path class="cls-1" d="M.9,32.9H32a.9.9,0,0,1,.9.9V79.1a.9.9,0,0,1-.9.9H.9a.9.9,0,0,1-.9-.9V33.8a.9.9,0,0,1,.9-.9Zm30.2,32H1.8V78.2H31.1V64.9ZM1.8,63.1H31.1V49.8H1.8V63.1ZM31.1,34.7H1.8V48H31.1Z"/><path class="cls-1" d="M52.4,32.9a3.42,3.42,0,0,1,3.5,3.5v16a3.55,3.55,0,0,1-1,2.5,3.19,3.19,0,0,1-1.6.9v3.7h1a4.17,4.17,0,0,1,.9-1.6,3.55,3.55,0,0,1,2.5-1h16a3.5,3.5,0,1,1,0,7H66.6v8.9a29.43,29.43,0,0,1,5.5.7,7.49,7.49,0,0,1,1.6.5l.2-.2a3.62,3.62,0,1,1-1,2.5,1.48,1.48,0,0,1,.1-.7,5.64,5.64,0,0,1-1.2-.4,26.51,26.51,0,0,0-5.9-.7,21.23,21.23,0,0,0-5.9.7,5.64,5.64,0,0,0-1.2.4c0,.2.1.5.1.7a3.42,3.42,0,1,1-1-2.5l.2.2c.5-.2,1-.3,1.6-.5a22.94,22.94,0,0,1,5.5-.7V64H58.1a3.55,3.55,0,0,1-2.5-1,3.19,3.19,0,0,1-.9-1.6H52.8a.9.9,0,0,1-.9-.9V55.9a4.17,4.17,0,0,1-1.6-.9,3.55,3.55,0,0,1-1-2.5v-16a3.55,3.55,0,0,1,1-2.5,2.25,2.25,0,0,1,2.1-1.1Zm4,42.3a1.9,1.9,0,0,0-1.3-.5,2.11,2.11,0,0,0-1.3.5,1.9,1.9,0,0,0-.5,1.3,2.11,2.11,0,0,0,.5,1.3,1.9,1.9,0,0,0,1.3.5,2.11,2.11,0,0,0,1.3-.5,1.94,1.94,0,0,0,0-2.6Zm21.3,0a1.9,1.9,0,0,0-1.3-.5,2.11,2.11,0,0,0-1.3.5,1.9,1.9,0,0,0-.5,1.3,2.11,2.11,0,0,0,.5,1.3,1.9,1.9,0,0,0,1.3.5,2.11,2.11,0,0,0,1.3-.5,1.94,1.94,0,0,0,0-2.6Zm-21.2-16a1.85,1.85,0,0,0-.5,1.2,2.11,2.11,0,0,0,.5,1.3,1.9,1.9,0,0,0,1.3.5h16a2.11,2.11,0,0,0,1.3-.5,1.9,1.9,0,0,0,.5-1.3,2.11,2.11,0,0,0-.5-1.3,1.9,1.9,0,0,0-1.3-.5h-16a2.62,2.62,0,0,0-1.3.6Zm-2.8-24a1.9,1.9,0,0,0-1.3-.5,2.11,2.11,0,0,0-1.3.5,1.9,1.9,0,0,0-.5,1.3v16a2.11,2.11,0,0,0,.5,1.3,1.9,1.9,0,0,0,1.3.5,2.11,2.11,0,0,0,1.3-.5,1.9,1.9,0,0,0,.5-1.3v-16A1.9,1.9,0,0,0,53.7,35.2Z"/><path class="cls-1" d="M40,29.3a.9.9,0,0,1,1.8,0V78.2h3.6a.9.9,0,0,1,0,1.8H36.5a.9.9,0,1,1,0-1.8H40Z"/><path class="cls-1" d="M34.2,0H47.5a.88.88,0,0,1,.9.8l5.3,23.9a.92.92,0,0,1-.7,1.1H28.8a.9.9,0,0,1-.9-.9v-.3L33.2.7a1.2,1.2,0,0,1,1-.7ZM46.8,1.8H34.9L30,24H51.8Z"/></svg>
+									</div>
+								</div>
+							</div>
+							<div class="feature-item lights">
+								<div class="feature-item-text">
+									<p>Освещение офисного пространства в любой точке</p>
+									<div class="lights-icon">
+										<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.8 69.9"><defs><style>.cls-1{fill:#fff;}</style></defs><title>lights</title><path class="cls-1" d="M43.1,57.1v-4A1.11,1.11,0,0,0,42,52H39.5L55.6,34.8a1.09,1.09,0,0,0,0-1.5L35.8,14.2l4-4.3a1,1,0,0,0-.1-1.5l-2-1.9,2.1-2.2a1,1,0,0,0-.1-1.5L37,.3a1.14,1.14,0,0,0-.8-.3.78.78,0,0,0-.7.3L33.4,2.5,31.8,1a1,1,0,0,0-1.5.1L19.5,12.8a14.66,14.66,0,0,0-4.2-.5A20.47,20.47,0,0,0,.4,19.2a1.14,1.14,0,0,0-.3.8.91.91,0,0,0,.3.7L23.3,41.6a1.08,1.08,0,0,0,.7.3,1.14,1.14,0,0,0,.8-.3c5.4-6,6.9-14,4.3-20.2l5.1-5.5,19,18.3L36.6,51.9H32.1A1.11,1.11,0,0,0,31,53v4c-6.7,1.6-11.5,5.8-12.8,11.6a1,1,0,0,0,.2.9.91.91,0,0,0,.8.4H54.7a.91.91,0,0,0,.8-.4,1,1,0,0,0,.2-.9C54.6,62.9,49.8,58.6,43.1,57.1ZM36.3,2.6l1.1,1L36.1,5,35,4ZM24,39.2,2.7,19.8a17.79,17.79,0,0,1,12.5-5.4,14.21,14.21,0,0,1,4.2.6h0a11.18,11.18,0,0,1,2.5,1.1h0a3.59,3.59,0,0,1,1,.7l.1.1a8.74,8.74,0,0,1,1,.8l.9.9c.2.2.3.4.5.6s.2.3.3.4a3.51,3.51,0,0,1,.5.8c0,.1.1.1.1.2a4.67,4.67,0,0,1,.5,1C29.5,26.8,28.5,33.8,24,39.2Zm3.1-21.4c-.1-.1-.1-.2-.2-.3a8.64,8.64,0,0,0-1.3-1.4,19.23,19.23,0,0,0-1.7-1.3c-.1,0-.1-.1-.2-.1a12.81,12.81,0,0,0-2-1.1L31.2,3.4l1.6,1.5h0l2.7,2.5h0l2,1.9-9.3,10-.1-.1A7.1,7.1,0,0,0,27.1,17.8Zm6.1,36.3H41v2.6a23.76,23.76,0,0,0-3.9-.3,25.61,25.61,0,0,0-3.9.3ZM20.7,67.9c2-5.7,8.2-9.3,16.3-9.3s14.4,3.6,16.3,9.3Z" transform="translate(-0.1)"/></svg>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!--block-scrollDown-->
+				<div class="block-scrollDown">
+					<div class="site-wrap">
+						<div class="scrollDown-text">события и акции</div>
+					</div>
+				</div>
+				<!--block-scrollDown-END-->
 
-		<!--FOOTER-->
-		<footer class="block-footer">
-			<div class="site-wrap">	
-				<nav class="footer-nav">
-					<ul class="footer-list unstyle-list">
-						<li class="footer-list-item"><a class="footer-list-link" href="#">Пластическая хирургия</a></li>
-						<li class="footer-list-item"><a class="footer-list-link" href="#">Аппаратная косметология</a></li>
-						<li class="footer-list-item"><a class="footer-list-link" href="#">Лазерный центр</a></li>
-						<li class="footer-list-item"><a class="footer-list-link" href="#">Инъекционная косметология</a></li>
-						<li class="footer-list-item"><a class="footer-list-link" href="#">Эстетическая косметология</a></li>
-						<li class="footer-list-item"><a class="footer-list-link" href="#">Подология</a></li>
-						<li class="footer-list-item"><a class="footer-list-link" href="#">Маникюр</a></li>
-						<li class="footer-list-item"><a class="footer-list-link" href="#">Я хочу</a></li>
-					</ul>
-				</nav>
 			</div>
 
-				<section class="block-mailing">
+			<!--block-sectionLinks-->
+			<div class="block-sectionLinks">
+				<div class="section-links-wrapper">
+					<a class="link lease-office" href="#">
+						<div class="title"><span>Аренда офисов</span></div>
+					</a>
+					<a class="link lease-retail" href="#">
+						<div class="title"><span>Аренда ритейла</span></div>
+					</a>
+				</div>
+			</div>
+			<!--block-sectionLinks-END-->
+
+			<!--block-eventsAndActions-->
+				<div class="block-eventsAndActions">
 					<div class="site-wrap">
-							<div class="mailing-title">Присоединиться к рассылке</div>
-							<form class="mailing-form clearfix" method="post" action="#">
-								<input class="mailing-email form-element" type="email" name="mailing-name" placeholder="Email">
-								<input class="mailing-submit" type="submit" name="mailing-submit">
-							</form>
-					</div>
-				</section>
-
-				<div class="site-wrap">
-					<section class="block-social">
-						<a class="social-button fb" href="#"></a>
-						<a class="social-button inst" href="#"></a>
-						<a class="social-button tw" href="#"></a>
-						<a class="social-button vk" href="#"></a>
-						<a class="social-button yt" href="#"></a>
-					</section>
+						<div class="eventsAndActions-wrapper">
+							<div class="eventsAndActions-slider-prev"></div>
+							<div class="eventsAndActions-slider-next"></div>
+							<h2 class="eventsAndActions-title">События и акции</h2>
+							<div class="eventsAndActions-filters">
+								<span class="filter active">Все</span>
+								<span class="filter">События</span>
+								<span class="filter">Акции</span>
+							</div>
+							<div class="eventsAndActions-slider-wrapper">
+								<div class="eventsAndActions-slider">
+									<div class="slide">
+										<div class="image">
+											<img src="images/event_3.jpg" alt="Логотип" width="370" height="375">
+										</div>
+										<div class="slide-text-wrapper">
+											<div class="type">Событие</div>
+											<div class="text"><p>Архитектура hi-tech декорирована элементами ампир в виде каменных львов, ажурных кованых ограждений и башен 19 века, прошедших реставрацию. Все это создает уникальный единый...</p></div>
+											<time class="date" datetime="2016-07-11">7 ноября</time>
+										</div>
+									</div>
+									<div class="slide">
+										<div class="image">
+											<img src="images/event_3.jpg" alt="Логотип" width="370" height="375">
+										</div>
+										<div class="slide-text-wrapper">
+											<div class="type">Событие</div>
+											<div class="text"><p>Архитектура hi-tech декорирована элементами ампир в виде каменных львов, ажурных кованых ограждений и башен 19 века, прошедших реставрацию. Все это создает уникальный единый...</p></div>
+											<time class="date" datetime="2016-07-11">7 ноября</time>
+										</div>
+									</div>
+									<div class="slide">
+										<div class="image">
+											<img src="images/event_3.jpg" alt="Логотип" width="370" height="375">
+										</div>
+										<div class="slide-text-wrapper">
+											<div class="type">Событие</div>
+											<div class="text"><p>Архитектура hi-tech декорирована элементами ампир в виде каменных львов, ажурных кованых ограждений и башен 19 века, прошедших реставрацию. Все это создает уникальный единый...</p></div>
+											<time class="date" datetime="2016-07-11">7 ноября</time>
+										</div>
+									</div>
+									<div class="slide">
+										<div class="image">
+											<img src="images/event_3.jpg" alt="Логотип" width="370" height="375">
+										</div>
+										<div class="slide-text-wrapper">
+											<div class="type">Событие</div>
+											<div class="text"><p>Архитектура hi-tech декорирована элементами ампир в виде каменных львов, ажурных кованых ограждений и башен 19 века, прошедших реставрацию. Все это создает уникальный единый...</p></div>
+											<time class="date" datetime="2016-07-11">7 ноября</time>
+										</div>
+									</div>
+									<div class="slide">
+										<div class="image">
+											<img src="images/event_3.jpg" alt="Логотип" width="370" height="375">
+										</div>
+										<div class="slide-text-wrapper">
+											<div class="type">Событие</div>
+											<div class="text"><p>Архитектура hi-tech декорирована элементами ампир в виде каменных львов, ажурных кованых ограждений и башен 19 века, прошедших реставрацию. Все это создает уникальный единый...</p></div>
+											<time class="date" datetime="2016-07-11">7 ноября</time>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 				</div>
-				
-				<div class="site-wrap">
-					<section class="block-copyright">Copyright 2015-2017</section>
 				</div>
+			<!--block-eventsAndActions-END-->
 
-		</footer>
 	</div>
+		<!--FOOTER-->
+		<footer class="block-footer mainPage">
+			<div class="site-wrap">
+				<div class="footer-wrapper clearfix">
+					<div class="column-left clearfix">
+						<div class="footer-copyright">
+							<div class="footer-description">&copy; Бизнес-центр Вирейская Плаза</div>
+							<div class="footer-logo">
+								<a class="logo" href="#">
+									<img src="images/footer-logo.png" alt="Логотип" width="143" height="55">
+								</a>
+								<div class="logo-description">Проект компании Plaza Development</div>
+							</div>
+						</div>
+						<div class="footer-menu">
+							<menu>
+								<li><a href="#">О бизнес-центре</a></li>
+								<li><a href="#">Галерея</a></li>
+								<li><a href="#">Расположение</a></li>
+								<li><a href="#">Офисы</a></li>
+								<li><a href="#">События</a></li>
+								<li><a href="#">Ритейл</a></li>
+								<li><a href="#">Акции</a></li>
+								<li><a href="#">Контакты</a></li>
+								<li><a href="#">Виртуальный тур</a></li>
+							</menu>
+						</div>
+					</div>
+					<div class="column-right clearfix">
+						<div class="footer-add-request">
+							<a class="add-request-btn default-btn" href="#">
+								<span>Отправить заявку</span>
+							</a>
+						</div>
+						<div class="footer-tel">
+							<span><a href="tel:+74952121559">+7 (495) 212-15-59</a></span>
+							<span class="footer-tel-callback"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 		<!--FOOTER-END-->
-
+	</div>
 	</body>
 </html>
