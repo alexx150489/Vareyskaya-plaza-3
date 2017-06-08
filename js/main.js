@@ -1,5 +1,13 @@
 $(document).ready(function() {
 
+
+ // block-header-navigation 
+
+	$(".burger-btn").on('click', function(e) {
+		e.preventDefault();
+		$(".block-header-navigation").slideToggle();
+	});
+
  // block-mainPage SMOOTH SCROLL
 
 	$(".scrollDown-wrapper").on("click", function(e) {
@@ -70,5 +78,7 @@ $(document).ready(function() {
 		prevArrow: $('.organisation-gallery .slider-prev'),
 		nextArrow: $('.organisation-gallery .slider-next')
 	});
+
+	
 
 });
