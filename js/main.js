@@ -1,14 +1,18 @@
 $(document).ready(function() {
+	
+	
+	$('.burger-btn').click(function(){
+		$(this).toggleClass('open');
+	});
 
-
- // block-header-navigation 
+	// block-header-navigation 
 
 	$(".burger-btn").on('click', function(e) {
 		e.preventDefault();
 		$(".block-header-navigation").slideToggle();
 	});
 
- // block-mainPage SMOOTH SCROLL
+	// block-mainPage SMOOTH SCROLL
 
 	$(".scrollDown-wrapper").on("click", function(e) {
 
@@ -22,6 +26,9 @@ $(document).ready(function() {
 	}, 500);
 
 });
+
+	// block-gallery range slider
+	$(".images-range-control").slider();
 
 	// slcik slider http://kenwheeler.github.io/slick/ >>>
 
@@ -53,15 +60,14 @@ $(document).ready(function() {
 
 	// block-eventsAndActions
 	$('.block-eventsAndActions .eventsAndActions-slider').slick({
-		arrows: true,
-		autoplay: false,
-		pauseOnHover: true,
-		autoplaySpeed: 3000,
 		dots: false,
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		variableWidth: true,
 		infinite: false,
+		speed: 300,
+		centerMode: false,
+		slidesToShow: 3,
+		variableWidth: true,
+		arrows: true,
+		initialSlide: 0,
 		prevArrow: $('.block-eventsAndActions .eventsAndActions-slider-prev'),
 		nextArrow: $('.block-eventsAndActions .eventsAndActions-slider-next')
 	});
@@ -79,6 +85,78 @@ $(document).ready(function() {
 		nextArrow: $('.organisation-gallery .slider-next')
 	});
 
-	
+	$('.about-info-slider').slick({
+		dots: false,
+		infinite: false,
+		speed: 300,
+		centerMode: false,
+		slidesToShow: 1,
+		variableWidth: true,
+		arrows: true,
+		initialSlide: 1,
+		prevArrow: $('.about-info-gallery .slider-prev'),
+		nextArrow: $('.about-info-gallery .slider-next')
+	});
+
+	$('.about-info-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+		$('.about-info-slider .slide').css('width', '488px');
+		$('.about-info-slider .slide:eq(' + (nextSlide) + ')').css('width', '800px');
+	});
+
+	//	http://fancybox.net/ >>>
+
+ $(".block-header .callback-btn-js").fancybox({
+		'transitionIn'	:	'elastic',
+		'transitionOut'	:	'elastic',
+		'speedIn'		:	600, 
+		'speedOut'		:	200, 
+		'overlayShow'	:	false,
+		'width': 882,
+		'padding' : 0,
+		'closeBtn' : false
+	});
+
+	 $(".block-footer .footer-callback-js").fancybox({
+		'transitionIn'	:	'elastic',
+		'transitionOut'	:	'elastic',
+		'speedIn'		:	600, 
+		'speedOut'		:	200, 
+		'overlayShow'	:	false,
+		'width': 882,
+		'padding' : 0,
+		'closeBtn' : false
+	});
+
+	$(".popup-callback-close").click( function(e) {
+		$.fancybox.close();
+	});
+
+
+	$(".block-header .feedback-btn-js").fancybox({
+		'transitionIn'	:	'elastic',
+		'transitionOut'	:	'elastic',
+		'speedIn'		:	600, 
+		'speedOut'		:	200, 
+		'overlayShow'	:	false,
+		'width': 882,
+		'padding' : 0,
+		'closeBtn' : false
+	});
+
+	$(".block-footer .footer-feedback-js").fancybox({
+		'transitionIn'	:	'elastic',
+		'transitionOut'	:	'elastic',
+		'speedIn'		:	600, 
+		'speedOut'		:	200, 
+		'overlayShow'	:	false,
+		'width': 882,
+		'padding' : 0,
+		'closeBtn' : false
+	});
+
+	$(".popup-feedback-close").click( function(e) {
+		$.fancybox.close();
+	});
+
 
 });

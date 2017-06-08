@@ -224,14 +224,14 @@ header {width:100%;}
 .block-header .burger-btn .line1{
 	width: 49px;
 	height: 3px;
-	margin-bottom: 8px;
+	/*margin-bottom: 8px;*/
 	background-color: #fff;
 }
 
 .block-header .burger-btn .line2{
 	width: 38px;
 	height: 3px;
-	margin-bottom: 8px;
+	/*margin-bottom: 8px;*/
 	background-color: #fff;
 }
 
@@ -239,6 +239,86 @@ header {width:100%;}
 	width: 44px;
 	height: 3px;
 	background-color: #fff;
+}
+
+.burger-btn	{
+		position: relative;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+	cursor: pointer;
+}
+
+.burger-btn	div {
+	position: absolute;
+	opacity: 1;
+	left: 0;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: .25s ease-in-out;
+	-moz-transition: .25s ease-in-out;
+	-o-transition: .25s ease-in-out;
+	transition: .25s ease-in-out;
+}
+
+/* Icon 4 */
+
+
+
+.burger-btn div:nth-child(1) {
+	top: 0px;
+	-webkit-transform-origin: left center;
+	-moz-transform-origin: left center;
+	-o-transform-origin: left center;
+	transform-origin: left center;
+}
+
+.burger-btn div:nth-child(2) {
+	top: 11px;
+	-webkit-transform-origin: left center;
+	-moz-transform-origin: left center;
+	-o-transform-origin: left center;
+	transform-origin: left center;
+}
+
+.burger-btn div:nth-child(3) {
+	top: 22px;
+	-webkit-transform-origin: left center;
+	-moz-transform-origin: left center;
+	-o-transform-origin: left center;
+	transform-origin: left center;
+}
+
+.burger-btn.open div:nth-child(1) {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	width: 47px;
+	top: 5px;
+	left: 8px;
+}
+
+.burger-btn.open div:nth-child(2) {
+	width: 0%;
+	opacity: 0;
+}
+
+.burger-btn.open div:nth-child(3) {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	width: 47px;
+	top: 39px;
+	left: 8px;
 }
 
 /* ==========================================================================
@@ -286,6 +366,12 @@ header {width:100%;}
 
 .block-header-navigation a:hover::before, .block-header-navigation a:focus::before {
 	width: 100%;
+}
+
+.menu-mode {
+	overflow-y: hidden;
+	padding-right: 17px;
+	background-color: #ffa500;
 }
 
 /* ==========================================================================
@@ -395,8 +481,7 @@ header {width:100%;}
 	text-align: left;
 }
 
-
-.block-footer .footer-tel a{
+.block-footer .footer-tel span a {
 	position: relative;
 	color: #fff;
 	transition: all .3s ease-in;
@@ -407,6 +492,8 @@ header {width:100%;}
 }
 
 .block-footer .footer-tel-callback {
+	display: inline-block;
+	vertical-align: top;
 	position: absolute;
 	content: '';
 	width: 25px;
@@ -1581,7 +1668,6 @@ main.errorpage {
 	text-transform: uppercase;
 }
 
-
 .block-eventsAndActions .text {
 	margin-bottom: 5px;
 	font-family: 'LitteraPlainLight';
@@ -1624,12 +1710,15 @@ main.errorpage {
 	position: relative;
 }
 
+.eventsAndActions-slider-wrapper {
+	position: relative;
+}
 
 .eventsAndActions-slider-prev {
 	position: absolute;
 	width: 48px;
 	height: 10px;
-	top: 32px;
+	top: -75px;
 	right: 84px;
 	background: url("../images/svg/arow_left.svg") 0 0 no-repeat;
 	z-index: 999;
@@ -1640,12 +1729,15 @@ main.errorpage {
 	position: absolute;
 	width: 48px;
 	height: 10px;
-	top: 32px;
+	top: -75px;
 	right: 0px;
 	background: url("../images/svg/arow_right.svg") 0 0 no-repeat;
 	z-index: 999;
 	cursor: pointer;
 }
+
+.block-eventsAndActions .slick-list.draggable {overflow:visible;}
+
 
 
 /* ==========================================================================
@@ -1693,6 +1785,7 @@ main.errorpage {
 	position: relative;
 	padding-top: 50px;
 	padding-bottom: 99px;
+
 }
 
 .about-top-text {
@@ -1724,10 +1817,10 @@ main.errorpage {
 	position: absolute;
 	content: '';
 	top: -78px;
-	right: -49px;
+	right: -10px;
 	display: inline-block;
 	vertical-align: top;
-	width: 55%;
+	width: 52%;
 }
 
 .about-top-image .img-wrapper, .about-top-image .img-info {
@@ -1760,6 +1853,8 @@ main.errorpage {
 }
 
 /* !!!ИНФОРМАЦИЯ!!! */
+
+
 .about-info-features {
 	font-size: 0;
 }
@@ -1770,8 +1865,9 @@ main.errorpage {
 
 .about-info-gallery {
 	height: 495px;
-	background-color: red;
+	background-color: #171524;
 	margin-bottom: 69px;
+	overflow: hidden;
 }
 
 .about-info-features .feature{
@@ -1780,7 +1876,7 @@ main.errorpage {
 }
 
 .about-info .feature1 {
-		width: 35%;
+	width: 35%;
 	padding-left: 117px;
 	font-family: 'LitteraPlainBold';
 	font-size: 66px;
@@ -1806,6 +1902,40 @@ main.errorpage {
 	line-height: 38px;
 	color: #fff;
 }
+
+.about-info-slider-wrapper {
+	position: relative;
+}
+
+.about-info-gallery .slider-prev {
+	position: absolute;
+	width: 48px;
+	height: 10px;
+	top: 239px;
+	left: -25px;
+	background: url("../images/svg/arow_left.svg") 0 0 no-repeat;
+	z-index: 999;
+	cursor: pointer;
+}
+
+.about-info-gallery .slider-next {
+	position: absolute;
+	width: 48px;
+	height: 10px;
+	top: 239px;
+	left: 730px;
+	background: url("../images/svg/arow_right.svg") 0 0 no-repeat;
+	z-index: 999;
+	cursor: pointer;
+}
+
+
+.about-info .slick-list.draggable {overflow:visible;}
+.about-info .about-info-slider {width:100%; height:495px;}
+.about-info-slider .slide {width:auto; height:auto; margin:0px; outline:none;}
+.about-info-slider .slide .img {width:488px; height:405px; padding:116px 50px 0px 0px; transition:all 0.3s ease-out 0s;}
+.about-info-slider .slide .img img {width:100%; height:100%; transition:all 0.3s ease-out 0s;}
+.about-info-slider .slide.slick-current .img {width:800px; height:495px; padding-top:0px;}
 
 /* !!!ХАРАКТЕРИСТИКИ!!! */
 .about-characteristics .characteristics-title {
@@ -2448,14 +2578,58 @@ main.errorpage {
 }
 
 /* ==========================================================================
+	 block-gallery-popup >>>
+	 ========================================================================== */
+
+.block-gallery-popup {
+	display: none;
+}
+
+.gallery-popup-wrapper {
+
+}
+
+.gallery-popup-content {
+	width: 1255px;
+	margin: 0 auto;
+
+}
+
+.images-range-control-wrapper {
+	height: 90px;
+
+}
+
+.content-images .image {
+	width: 1156px;
+	margin: 0 auto;
+}
+
+.content-images {
+	margin-bottom: 44px;
+}
+
+
+/* ==========================================================================
 	 block-popup-callback >>>
 	 ========================================================================== */
 
 .block-popup-callback {
 	display: none;
+	position: relative;
 	background-color: #fff;
 	width: 882px;
 	outline: 1px solid gray;
+}
+
+.popup-callback-close {
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	top: -48px;
+	right: 0;
+	background:	url("../images/svg/close.svg") 0 0 no-repeat;
+	cursor: pointer;
 }
 
 .popup-callback-wrapper {
@@ -2570,9 +2744,20 @@ main.errorpage {
 
 .block-popup-feedback {
 	display: none;
+	position: relative;
 	background-color: #fff;
 	width: 882px;
 	outline: 1px solid gray;
+}
+
+.popup-feedback-close {
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	top: -48px;
+	right: 0;
+	background:	url("../images/svg/close.svg") 0 0 no-repeat;
+	cursor: pointer;
 }
 
 .popup-feedback-wrapper {
@@ -2754,4 +2939,52 @@ main.errorpage {
 
 .block-about .slick-dots li:last-child {
 	margin-right: 0;
+}
+
+
+/* ==========================================================================
+	 jquery range slider >>>
+	 ========================================================================== */
+
+.ui-slider .ui-slider-handle {
+		position: absolute;
+		z-index: 2;
+		width: 40px;
+		height: 40px;
+		cursor: default;
+		background-color: #ffa500;
+		border-radius: 50%;
+		-ms-touch-action: none;
+		touch-action: none;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+	background: #ffa500;
+	font-weight: normal;
+	color: #454545;
+	border: none;
+	outline: none;
+}
+
+
+.ui-slider-horizontal .ui-slider-handle {
+	top: -19px;
+
+}
+
+.ui-slider-horizontal {
+		height: 1px;
+}
+
+.ui-widget.ui-widget-content {
+	border: none;
+		background: #595966;
+}
+
+
+/* ==========================================================================
+	 fancybox >>>
+	 ========================================================================== */
+.fancybox-inner {
+	overflow: visible !important;
 }

@@ -13,21 +13,20 @@
 		<link rel="stylesheet" href="css/fonts.css">
 		<link rel="stylesheet" href="css/slick.js/slick.css">
 		<link rel="stylesheet" href="css/slick.js/slick-theme.css">
-
+		<link rel="stylesheet" href="css/jquery-ui/jquery-ui.min.css">
 		<link rel="stylesheet" href="css/css3.css">
 		<link rel="stylesheet" href="css/main.css">
 
 
 		<script src="js/vendor/jquery-3.2.0.min.js"></script>
 		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
-
 		<script src="https://maps.googleapis.com/maps/api/js"></script>
-
 		<script src="js/vendor/google-map.js"></script>
+		<script src="js/vendor/jquery-ui/jquery-ui.min.js"></script>
 		<script src="js/vendor/jquery-migrate-1.4.1.min.js"></script>
 		<script src="js/vendor/jquery.form.min.js"></script>
 		<script src="js/vendor/fancybox/jquery.fancybox.pack.js"></script>
-		<script src="js/vendor/slick.js/slick.min.js"></script>
+		<script src="js/vendor/slick.js/slick.js"></script>
 		<script src="js/main.js"></script>
 
 
@@ -143,10 +142,6 @@
 				<div id="eventsAndActions" class="block-eventsAndActions">
 						<div class="eventsAndActions-wrapper">
 							<div class="site-wrap">
-								<div class="controls">
-									<div class="eventsAndActions-slider-prev"></div>
-									<div class="eventsAndActions-slider-next"></div>
-								</div>
 								<h2 class="eventsAndActions-title">События и акции</h2>
 								<div class="eventsAndActions-filters">
 									<span class="filter active">Все</span>
@@ -154,61 +149,64 @@
 									<span class="filter">Акции</span>
 								</div>
 							</div>
-							<div class="eventsAndActions-slider-wrapper">
-								<div class="eventsAndActions-slider">
-									<div class="slide">
-										<div class="image">
-											<img src="images/event_1.jpg" alt="Логотип" width="370" height="375">
+							<div class="site-wrap">
+								<div class="eventsAndActions-slider-wrapper">
+									<div class="eventsAndActions-slider-prev"></div>
+									<div class="eventsAndActions-slider-next"></div>
+									<div class="eventsAndActions-slider">
+										<div class="slide">
+											<div class="image">
+												<img src="images/event_1.jpg" alt="Логотип" width="370" height="375">
+											</div>
+											<div class="slide-text-wrapper">
+												<div class="type">Событие</div>
+												<div class="text"><p>Архитектура hi-tech декорирована элементами ампир в виде каменных львов, ажурных кованых ограждений и башен 19 века, прошедших реставрацию. Все это создает уникальный единый...Архитектура hi-tech декорирована элементами ампир в виде каменных львов, ажурных кованых ограждений и башен 19 века, прошедших реставрацию. Все это создает уникальный единый...</p></div>
+												<time class="date" datetime="2016-07-11">7 ноября</time>
+											</div>
 										</div>
-										<div class="slide-text-wrapper">
-											<div class="type">Событие</div>
-											<div class="text"><p>Архитектура hi-tech декорирована элементами ампир в виде каменных львов, ажурных кованых ограждений и башен 19 века, прошедших реставрацию. Все это создает уникальный единый...Архитектура hi-tech декорирована элементами ампир в виде каменных львов, ажурных кованых ограждений и башен 19 века, прошедших реставрацию. Все это создает уникальный единый...</p></div>
-											<time class="date" datetime="2016-07-11">7 ноября</time>
+										<div class="slide">
+											<div class="image">
+												<img src="images/event_2.jpg" alt="Логотип" width="370" height="375">
+											</div>
+											<div class="slide-text-wrapper">
+												<div class="type">Событие</div>
+												<div class="text"><p>Сочетание нескольких стилей заметно не только снаружи, но и внутри здания. Презентабельный холл, обширная торговая галерея, панорамные лифты, скульптурные композиции...</p></div>
+												<time class="date" datetime="2016-07-11">7 ноября</time>
+											</div>
 										</div>
-									</div>
-									<div class="slide">
-										<div class="image">
-											<img src="images/event_2.jpg" alt="Логотип" width="370" height="375">
+										<div class="slide">
+											<div class="image">
+												<img src="images/event_3.jpg" alt="Логотип" width="370" height="375">
+											</div>
+											<div class="slide-text-wrapper">
+												<div class="type">Акция</div>
+												<div class="text"><p>Натуральный камень и дерево отделки в контрастных тонах дают возможность гармонично выделять зоны ожидания и лифтовой вестибюль. красотой..Натуральный камень и дерево отделки в контрастных тонах дают возможность гармонично выделять зоны ожидания и лифтовой вестибюль. красотой..Натуральный камень и дерево отделки в контрастных тонах дают возможность гармонично выделять зоны ожидания и лифтовой вестибюль. красотой..</p></div>
+												<time class="date" datetime="2016-07-11">7 ноября</time>
+											</div>
 										</div>
-										<div class="slide-text-wrapper">
-											<div class="type">Событие</div>
-											<div class="text"><p>Сочетание нескольких стилей заметно не только снаружи, но и внутри здания. Презентабельный холл, обширная торговая галерея, панорамные лифты, скульптурные композиции...</p></div>
-											<time class="date" datetime="2016-07-11">7 ноября</time>
+										<div class="slide">
+											<div class="image">
+												<img src="images/event_4.jpg" alt="Логотип" width="370" height="375">
+											</div>
+											<div class="slide-text-wrapper">
+												<div class="type">Событие</div>
+												<div class="text"><p>Архитектура hi-tech декорирована элементами ампир в виде каменных львов, ажурных кованых ограждений и башен 19 века, прошедших реставрацию. Все это создает уникальный единый...</p></div>
+												<time class="date" datetime="2016-07-11">7 ноября</time>
+											</div>
 										</div>
-									</div>
-									<div class="slide">
-										<div class="image">
-											<img src="images/event_3.jpg" alt="Логотип" width="370" height="375">
-										</div>
-										<div class="slide-text-wrapper">
-											<div class="type">Акция</div>
-											<div class="text"><p>Натуральный камень и дерево отделки в контрастных тонах дают возможность гармонично выделять зоны ожидания и лифтовой вестибюль. красотой..Натуральный камень и дерево отделки в контрастных тонах дают возможность гармонично выделять зоны ожидания и лифтовой вестибюль. красотой..Натуральный камень и дерево отделки в контрастных тонах дают возможность гармонично выделять зоны ожидания и лифтовой вестибюль. красотой..</p></div>
-											<time class="date" datetime="2016-07-11">7 ноября</time>
-										</div>
-									</div>
-									<div class="slide">
-										<div class="image">
-											<img src="images/event_4.jpg" alt="Логотип" width="370" height="375">
-										</div>
-										<div class="slide-text-wrapper">
-											<div class="type">Событие</div>
-											<div class="text"><p>Архитектура hi-tech декорирована элементами ампир в виде каменных львов, ажурных кованых ограждений и башен 19 века, прошедших реставрацию. Все это создает уникальный единый...</p></div>
-											<time class="date" datetime="2016-07-11">7 ноября</time>
-										</div>
-									</div>
-									<div class="slide">
-										<div class="image">
-											<img src="images/event_1.jpg" alt="Логотип" width="370" height="375">
-										</div>
-										<div class="slide-text-wrapper">
-											<div class="type">Событие</div>
-											<div class="text"><p>Архитектура hi-tech декорирована элементами ампир в виде каменных львов, ажурных кованых ограждений и башен 19 века, прошедших реставрацию. Все это создает уникальный единый...</p></div>
-											<time class="date" datetime="2016-07-11">7 ноября</time>
+										<div class="slide">
+											<div class="image">
+												<img src="images/event_1.jpg" alt="Логотип" width="370" height="375">
+											</div>
+											<div class="slide-text-wrapper">
+												<div class="type">Событие</div>
+												<div class="text"><p>Архитектура hi-tech декорирована элементами ампир в виде каменных львов, ажурных кованых ограждений и башен 19 века, прошедших реставрацию. Все это создает уникальный единый...</p></div>
+												<time class="date" datetime="2016-07-11">7 ноября</time>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							
 						</div>
 				</div>
 			<!--block-eventsAndActions-END-->
