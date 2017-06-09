@@ -72,6 +72,35 @@ $(document).ready(function() {
 		nextArrow: $('.block-eventsAndActions .eventsAndActions-slider-next')
 	});
 
+		// block-offices
+	$('.offices-actions .actions-slider').slick({
+		dots: false,
+		infinite: false,
+		speed: 300,
+		centerMode: false,
+		slidesToShow: 3,
+		variableWidth: true,
+		arrows: true,
+		initialSlide: 0,
+		prevArrow: $('.offices-actions .actions-slider-prev'),
+		nextArrow: $('.offices-actions .actions-slider-next')
+	});
+
+
+	// block-offices popup
+	$('.block-offices-popup .popup-actions-slider').slick({
+		dots: false,
+		infinite: false,
+		speed: 300,
+		centerMode: false,
+		slidesToShow: 3,
+		variableWidth: true,
+		arrows: true,
+		initialSlide: 0,
+		prevArrow: $('.block-offices-popup .popup-actions-slider-prev'),
+		nextArrow: $('.block-offices-popup .popup-actions-slider-next')
+	});
+
 	// block-about organisation
 	$('.block-about .organisation-slider').slick({
 		autoplay: true,
@@ -127,6 +156,17 @@ $(document).ready(function() {
 		'closeBtn' : false
 	});
 
+	$(".block-offices .office-feedback-js").fancybox({
+		'transitionIn'	:	'elastic',
+		'transitionOut'	:	'elastic',
+		'speedIn'		:	600, 
+		'speedOut'		:	200, 
+		'overlayShow'	:	false,
+		'width': 882,
+		'padding' : 0,
+		'closeBtn' : false
+	});
+
 	$(".popup-callback-close").click( function(e) {
 		$.fancybox.close();
 	});
@@ -155,6 +195,46 @@ $(document).ready(function() {
 	});
 
 	$(".popup-feedback-close").click( function(e) {
+		$.fancybox.close();
+	});
+
+		// popup-offices
+		$(".block-offices .offices-plan").fancybox({
+		'transitionIn'	:	'elastic',
+		'transitionOut'	:	'elastic',
+		'speedIn'		:	600, 
+		'speedOut'		:	200, 
+		'overlayShow'	:	false,
+		'padding' : 0,
+		margin: [80, 0, 80, 0],
+		'width' : 882,
+	 	'height' : 1229,
+	 	'fitToView' : false,
+	 	'autoSize' : false,
+		'closeBtn' : false
+	});
+
+	$(".offices-popup-close").click( function(e) {
+		$.fancybox.close();
+	});
+
+		// popup-offices-detail
+	$(".offices-popup-actions .slide").fancybox({
+		'transitionIn'	:	'elastic',
+		'transitionOut'	:	'elastic',
+		'speedIn'		:	600, 
+		'speedOut'		:	200, 
+		'overlayShow'	:	false,
+		'padding' : 0,
+		 margin: [80, 0, 0, 0],
+		'width' : 880,
+	 	'height' : 1313,
+	 	'fitToView' : false,
+	 	'autoSize' : false,
+		'closeBtn' : false
+	});
+
+	$(".popup-detail-close").click( function(e) {
 		$.fancybox.close();
 	});
 
