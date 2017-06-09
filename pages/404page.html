@@ -11,16 +11,25 @@
 		<link rel="stylesheet" href="../css/normalize.css">
 		<link rel="stylesheet" href="../js/vendor/fancybox/jquery.fancybox.css">
 		<link rel="stylesheet" href="../css/fonts.css">
+		<link rel="stylesheet" href="../css/slick.js/slick.css">
+		<link rel="stylesheet" href="../css/slick.js/slick-theme.css">
+		<link rel="stylesheet" href="../css/jquery-ui/jquery-ui.min.css">
 
 		<link rel="stylesheet" href="../css/css3.css">
 		<link rel="stylesheet" href="../css/main.css">
-		
-		<script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+
+
 		<script src="../js/vendor/jquery-3.2.0.min.js"></script>
+		<script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+
+		<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+		<script src="../js/vendor/google-map.js"></script>
+		<script src="../js/vendor/jquery-ui/jquery-ui.min.js"></script>
 		<script src="../js/vendor/jquery-migrate-1.4.1.min.js"></script>
 		<script src="../js/vendor/jquery.form.min.js"></script>
 		<script src="../js/vendor/fancybox/jquery.fancybox.pack.js"></script>
-
+		<script src="../js/vendor/slick.js/slick.js"></script>
 		<script src="../js/main.js"></script>
 
 
@@ -58,10 +67,10 @@
 							</a>
 							<div class="header-tel">
 								<span><a href="tel:+74952121559">+7 (495) 212-15-59</a></span>
-								<span class="header-tel-callback"></span>
+								<a class="header-tel-callback callback-btn-js" href="#show-callback-modal"></a>
 							</div>
 							<div class="header-add-request">
-								<a class="add-request-btn default-btn" href="#">
+								<a class="add-request-btn default-btn feedback-btn-js" href="#show-feedback-modal">
 									<span>Отправить заявку</span>
 								</a>
 							</div>
@@ -105,8 +114,82 @@
 				</section>
 			</main>
 
+
+
+			<div id="show-callback-modal" class="block-popup-callback popup-callback-js">
+				<div class="popup-callback-close"></div>
+				<div class="popup-callback-wrapper">
+					<div class="popup-title">Заказать обратный звонок</div>
+					<div class="form-wrapper">
+						<form class="popup-callback-form" action="#" method="post" name="popup-callback-form">
+							<div class="form-el-wrapper">
+								<input class="callback-name" type="text" placeholder="Ваше имя">
+							</div>
+							<div class="form-el-wrapper">
+								<input class="callback-tel" type="tel" placeholder="Номер телефона">
+							</div>
+							<div class="callback-time-wrapper">
+								<span class="title">Удобное время для звонка</span>
+								<div class="select-wrapper">
+									<select class="callback-time1" name="callback-time1">
+										<option value="placeholder" disabled selected style='display:none;'>с 09:00</option>
+										<option value="">Значение1</option>
+										<option value="">Значение2</option>
+									</select>
+								</div>
+								<div class="select-wrapper">
+									<select class="callback-time2" name="callback-time2">
+										<option value="placeholder" disabled selected style='display:none;'>до 21:00</option>
+										<option value="">Значение1</option>
+										<option value="">Значение2</option>
+									</select>
+								</div>
+							</div>
+							<div class="callback-msg-wrapper">
+								<textarea name="callback-msg" placeholder="Сообщение"></textarea>
+							</div>
+							<div class="callback-submit-wrapper">
+								<input class="callback-submit-btn" type="submit" value="Заказать">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div id="show-feedback-modal" class="block-popup-feedback popup-feedback-js">
+				<div class="popup-feedback-close"></div>
+				<div class="popup-feedback-wrapper">
+					<div class="popup-title">Отправка заявки</div>
+					<div class="popup-description"><p>Отправьте сообщение с вашим вопросом и наши менеджеры в самое ближайшее время свяжутся с вами и дадут исчерпывающие ответы:</p></div>
+					<div class="form-wrapper">
+						<form class="popup-feedback-form" action="#" method="post" name="popup-feedback-form">
+							<div class="form-el-wrapper">
+								<input class="feedback-name" type="text" placeholder="Ваше имя">
+							</div>
+							<div class="form-el-group clearfix">
+								<input class="feedback-email" type="email" placeholder="Email">
+								<input class="feedback-tel" type="tel" placeholder="Телефон">
+							</div>
+							<div class="feedback-msg-wrapper">
+								<textarea name="feedback-msg" placeholder="Сообщение"></textarea>
+							</div>
+							<div class="feedback-submit-wrapper">
+								<input class="feedback-submit-btn" type="submit" value="Отправить">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="block-popup-success popup-success-js">
+				<div class="popup-success-close"></div>
+				<div class="popup-success-wrapper">
+					<div class="popup-title">Спасибо за обращение</div>
+					<div class="popup-description"><p>Наши менеджеры свяжутся с вами в ближайшее время</p></div>
+				</div>
+			</div>
 			<!--FOOTER-->
-			<footer class="block-footer">
+			<footer class="block-footer about">
 				<div class="site-wrap">
 					<div class="footer-wrapper clearfix">
 						<div class="column-left clearfix">
@@ -135,13 +218,13 @@
 						</div>
 						<div class="column-right clearfix">
 							<div class="footer-add-request">
-								<a class="add-request-btn default-btn" href="#">
+								<a class="add-request-btn default-btn footer-feedback-js" href="#show-feedback-modal">
 									<span>Отправить заявку</span>
 								</a>
 							</div>
 							<div class="footer-tel">
-								<span><a href="tel:+74952121559">+7 (495) 212-15-59</a></span>
-								<span class="footer-tel-callback"></span>
+								<span><a	href="tel:+74952121559">+7 (495) 212-15-59</a></span>
+								<a class="footer-tel-callback footer-callback-js" href="#show-callback-modal"></a>
 							</div>
 						</div>
 					</div>
