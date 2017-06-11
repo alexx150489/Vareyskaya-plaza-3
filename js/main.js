@@ -238,5 +238,27 @@ $(document).ready(function() {
 		$.fancybox.close();
 	});
 
+	// gallery
+		$(".show-gallery-js").fancybox({
+			'padding': 0,
+			margin: [50, 0, 0, 0],
+			'width' : 880,
+			'height' : 1313,
+			'fitToView' : false,
+			'closeBtn' : false
+		});
+
+	$(".popup-gallery-close").click( function(e) {
+		$.fancybox.close();
+	});
+
+	$(".show-gallery-js").click( function(e) {
+		var imgSrc = $(this).children("img").attr("src");
+		$("#show-gallery-modal img").attr("src", imgSrc);
+	});
+
+
+	$(".infrastructure-item-js").fancybox();
+
 
 });

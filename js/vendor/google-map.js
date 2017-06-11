@@ -13,7 +13,7 @@ function init() {
 				scrollwheel: false,
 
 				// The latitude and longitude to center the map (always required)
-				center: new google.maps.LatLng(55.7096039, 37.4426143,17.92),
+				center: new google.maps.LatLng(55.709468, 37.442295),
 
 				// How you would like to style the map. 
 				// This is where you would paste any style found on Snazzy Maps.
@@ -66,4 +66,20 @@ function init() {
 				scrollwheel: false
 			});
 		});
+
+		
+var historicalOverlay;
+
+var imageBounds = {
+	north: 55.713700,
+	south: 55.709089327297300,
+	east: 37.454533,
+	west: 37.43749994279453 
+};
+
+historicalOverlay = new google.maps.GroundOverlay(
+		'../images/navigation.png',
+		imageBounds);
+historicalOverlay.setMap(map);
+
 }

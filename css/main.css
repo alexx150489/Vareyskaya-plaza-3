@@ -3086,6 +3086,7 @@ main.errorpage {
 	width: 880px;
 	padding-top: 40px;
 	padding-bottom: 10px;
+	background-color: #fff;
 }
 
 .block-offices-popup-detail .popup-detail-title {
@@ -3191,8 +3192,6 @@ main.errorpage {
 	display: none;
 }
 
-.gallery-popup-wrapper {}
-
 .gallery-popup-content {
 	width: 1255px;
 	margin: 0 auto;
@@ -3200,8 +3199,12 @@ main.errorpage {
 }
 
 .images-range-control-wrapper {
-	height: 90px;
-
+	position: relative;
+	width: 1200px;
+	padding-top: 19px;
+	height: 41px;
+	margin: 0 auto;
+	padding-top: 6px;
 }
 
 .content-images .image {
@@ -3211,6 +3214,40 @@ main.errorpage {
 
 .content-images {
 	margin-bottom: 44px;
+}
+
+.block-gallery-popup .gallery-popup-prev {
+	position: absolute;
+	width: 48px;
+	height: 10px;
+	top: 50%;
+	left: 21px;
+	transform: translateY(-50%);
+	background: url("../images/svg/arow_left.svg") 0 0 no-repeat;
+	z-index: 999;
+	cursor: pointer;
+}
+
+.block-gallery-popup .gallery-popup-next	{
+	position: absolute;
+	width: 48px;
+	height: 10px;
+	top: 50%;
+	right: 21px;
+	transform: translateY(-50%);
+	background: url("../images/svg/arow_right.svg") 0 0 no-repeat;
+	z-index: 999;
+	cursor: pointer;
+}
+
+.popup-gallery-close {
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	top: -48px;
+	right: 0;
+	background:	url("../images/svg/close.svg") 0 0 no-repeat;
+	cursor: pointer;
 }
 
 
@@ -3549,14 +3586,12 @@ main.errorpage {
 
 .ui-slider .ui-slider-handle {
 		position: absolute;
-		z-index: 2;
 		width: 40px;
 		height: 40px;
-		cursor: default;
 		background-color: #ffa500;
 		border-radius: 50%;
-		-ms-touch-action: none;
-		touch-action: none;
+		margin-left: -17px;
+		
 }
 
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
@@ -3565,21 +3600,21 @@ main.errorpage {
 	color: #454545;
 	border: none;
 	outline: none;
+	
 }
 
 
 .ui-slider-horizontal .ui-slider-handle {
 	top: -19px;
-
 }
 
 .ui-slider-horizontal {
-		height: 1px;
+	height: 1px;
 }
 
 .ui-widget.ui-widget-content {
 	border: none;
-		background: #595966;
+	background: #595966;
 }
 
 
@@ -3588,4 +3623,8 @@ main.errorpage {
 	 ========================================================================== */
 .fancybox-inner {
 	overflow: visible !important;
+}
+
+.fancybox-skin {
+	background-color: rgba(26, 24, 32, .9); 
 }
