@@ -94,9 +94,9 @@
 								<h1>О бизнес-центре</h1>
 								<div class="links">
 									<a href="#" class="link active">О проекте</a>
-									<a href="#" class="link">Характеристики</a>
-									<a href="#" class="link">Оснащение</a>
-									<a href="#" class="link">Инфраструктура</a>
+									<a href="#about-characteristics" class="link characteristics">Характеристики</a>
+									<a href="#about-technical" class="link technical">Оснащение</a>
+									<a href="#about-infrastructure" class="link infrastructure">Инфраструктура</a>
 								</div>
 						</div>
 						
@@ -180,7 +180,7 @@
 							</div>
 						</div>
 
-						<div class="about-characteristics">
+						<div id="about-characteristics" class="about-characteristics">
 							<div class="site-wrap">
 								<div class="characteristics-title"><p>Характеристики</p></div>
 							</div>
@@ -235,7 +235,7 @@
 							</div>
 						</div>
 
-						<div class="about-technical">
+						<div id="about-technical" class="about-technical">
 							<div class="about-technical-text-wrapper">
 								<div class="site-wrap">
 									<div class="technical-title"><p>Техническое оснащение</p></div>
@@ -280,13 +280,13 @@
 							</div>
 						</div>
 
-						<div class="about-infrastructure">
+						<div id="about-infrastructure" class="about-infrastructure">
 							<div class="site-wrap">
 								<div class="infrastructure-title"><p>Инфрастуктура</p></div>
 								<div class="infrastructure-description"><p>«Верейская плаза III» предоставляет возможность не только комфортно проводить рабочее время, но и располагает к приятному отдыху. К услугам сотрудников и посетителей:</p></div>
 								<div class="infrastructure-items">
 									<div class="row">
-										<a class="infrastructure-item infrastructure-item-js" href="../images/infra_1.jpg">
+										<a class="infrastructure-item infrastructure-item-js" href="#show-infrastructure-modal">
 											<div class="infrastructure-item-wrapper">
 												<div class="image">
 													<img src="../images/infra_1.jpg" alt="Фотография" width="370" height="250">
@@ -294,7 +294,7 @@
 												<div class="description"><p>Рестораны и кафетерии бизнес-центра</p></div>
 											</div>
 										</a>
-										<a class="infrastructure-item infrastructure-item-js" href="../images/infra_2.jpg">
+										<a class="infrastructure-item infrastructure-item-js" href="#show-infrastructure-modal">
 											<div class="infrastructure-item-wrapper">
 												<div class="image">
 													<img src="../images/infra_2.jpg" alt="Фотография" width="370" height="250">
@@ -303,7 +303,7 @@
 меню для сотрудников</p></div>
 											</div>
 										</a>
-										<a class="infrastructure-item infrastructure-item-js" href="../images/infra_3.jpg">
+										<a class="infrastructure-item infrastructure-item-js" href="#show-infrastructure-modal">
 											<div class="infrastructure-item-wrapper">
 												<div class="image">
 													<img src="../images/infra_3.jpg" alt="Фотография" width="370" height="250">
@@ -313,7 +313,7 @@
 										</a>
 									</div>
 									<div class="row">
-										<a class="infrastructure-item infrastructure-item-js" href="../images/infra_4.jpg">
+										<a class="infrastructure-item infrastructure-item-js" href="#show-infrastructure-modal">
 											<div class="infrastructure-item-wrapper">
 												<div class="image">
 													<img src="../images/infra_4.jpg" alt="Фотография" width="370" height="250">
@@ -321,7 +321,7 @@
 												<div class="description"><p>Отделения банков</p></div>
 											</div>
 										</a>
-										<a class="infrastructure-item infrastructure-item-js" href="../images/infra_5.jpg">
+										<a class="infrastructure-item infrastructure-item-js" href="#show-infrastructure-modal">
 											<div class="infrastructure-item-wrapper">
 												<div class="image">
 													<img src="../images/infra_5.jpg" alt="Фотография" width="370" height="250">
@@ -498,8 +498,22 @@
 					</div>
 				</div>
 			</footer>
-			<!--FOOTER-END-->
-
+			<!--FOOTER-END infrastructure-->
+			
+			<div id="show-infrastructure-modal" class="block-infrastructure-popup">
+				<div class="popup-infrastructure-close"></div>
+				<div class="infrastructure-popup-wrapper">
+					<div class="infrastructure-popup-prev"></div>
+					<div class="infrastructure-popup-next"></div>
+					<div class="infrastructure-popup-content">
+						<div class="content-images">
+							<div class="image">
+								<img alt="Фотография" width="1156" height="770">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
 		</div>
 
