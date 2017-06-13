@@ -347,7 +347,10 @@ header {width:100%;}
 .block-header-navigation ul {
 	width: 280px;
 	margin: 0 auto;
-	padding-top: 163px;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
 }
 
 .block-header-navigation a {
@@ -2631,6 +2634,11 @@ main.errorpage {
 	color: #fff;
 	text-transform: uppercase;
 	cursor: pointer;
+	transition: color .2s ease-in;
+}
+
+.main-page-title.gallery .link:hover {
+	color: #ffa500;
 }
 
 .main-page-title.gallery .link.active {

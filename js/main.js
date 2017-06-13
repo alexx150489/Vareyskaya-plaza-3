@@ -415,8 +415,6 @@ $('.images-range-control').slider({ disabled: "true" });
 				$(".fancybox-skin").css("backgroundColor","transparent");
 				}
 		});
-		
-
 	$(".popup-gallery-close").click( function(e) {
 		$.fancybox.close();
 	});
