@@ -2006,6 +2006,26 @@ main.errorpage {
 .about-info-slider .slide .img img {width:100%; height:100%; transition:all 0.3s ease-out 0s;}
 .about-info-slider .slide.slick-current .img {width:800px; height:495px; padding-top:0px;}
 
+.about-info-gallery .bg {
+	position: relative;
+}
+.about-info-gallery .bg::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	right: 0;
+	background-color: #201e2d;
+	opacity: .6;
+	transition: all .5s ease-in;
+}
+
+.about-info-gallery .slick-current .bg::after	{
+	opacity: 0;
+}
+
 /* !!!ХАРАКТЕРИСТИКИ!!! */
 .about-characteristics .characteristics-title {
 	margin-bottom: 70px;
@@ -2570,7 +2590,7 @@ main.errorpage {
 	width: 32px;
 	height: 32px;
 	top: -48px;
-	right: 0;
+	right: 59px;
 	background:	url("../images/svg/close.svg") 0 0 no-repeat;
 	cursor: pointer;
 }
@@ -4234,14 +4254,14 @@ main.errorpage {
 }
 
 .gallery-popup-content {
-	width: 1255px;
-	margin: 0 auto;
+
+
 
 }
 
 .images-range-control-wrapper {
 	position: relative;
-	width: 1200px;
+
 	padding-top: 19px;
 	height: 41px;
 	margin: 0 auto;
@@ -4249,7 +4269,6 @@ main.errorpage {
 }
 
 .content-images .image {
-	width: 1156px;
 	margin: 0 auto;
 }
 
@@ -4262,7 +4281,7 @@ main.errorpage {
 	width: 48px;
 	height: 10px;
 	top: 50%;
-	left: 21px;
+	left: -6px;
 	transform: translateY(-50%);
 	background: url("../images/svg/arow_left.svg") 0 0 no-repeat;
 	z-index: 999;
@@ -4274,7 +4293,7 @@ main.errorpage {
 	width: 48px;
 	height: 10px;
 	top: 50%;
-	right: 21px;
+	right: -6px;
 	transform: translateY(-50%);
 	background: url("../images/svg/arow_right.svg") 0 0 no-repeat;
 	z-index: 999;
@@ -4588,6 +4607,16 @@ main.errorpage {
 	color: #000;
 }
 
+.popup-success-close {
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	top: -48px;
+	right: 0;
+	background:	url("../images/svg/close.svg") 0 0 no-repeat;
+	cursor: pointer;
+}
+
 /* ==========================================================================
 	 slick.js >>>
 	 ========================================================================== */
@@ -4685,6 +4714,9 @@ main.errorpage {
 	overflow: visible !important;
 }
 
-.fancybox-skin {
-	background-color: rgba(26, 24, 32, .9); 
+.fancybox-opened .fancybox-skin {
+		-webkit-box-shadow: 0 0 0;
+			 -moz-box-shadow: 0 0 0;
+						box-shadow: 0 0 0;
 }
+

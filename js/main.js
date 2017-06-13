@@ -75,7 +75,7 @@ $(document).ready(function() {
 
 
 	// block-gallery range slider
-	$(".images-range-control").slider();
+$('.images-range-control').slider({ disabled: "true" });
 
 	// slcik slider http://kenwheeler.github.io/slick/ >>>
 
@@ -203,6 +203,7 @@ $(document).ready(function() {
 		nextArrow: $('.organisation-gallery .slider-next')
 	});
 
+	// block-about info
 	$('.about-info-slider').slick({
 		dots: false,
 		infinite: false,
@@ -386,6 +387,20 @@ $(document).ready(function() {
 	$(".popup-detail-close").click( function(e) {
 		$.fancybox.close();
 	});
+			// popup-offices-success
+	$(".block-offices .item.success").fancybox({
+		'transitionIn'	:	'elastic',
+		'transitionOut'	:	'elastic',
+		'speedIn'		:	600, 
+		'speedOut'		:	200, 
+		'overlayShow'	:	false,
+		'padding' : 0,
+		'closeBtn' : false
+	});
+	$(".popup-success-close").click( function(e) {
+		$.fancybox.close();
+	});
+
 
 	// gallery
 		$(".show-gallery-js").fancybox({
@@ -394,11 +409,24 @@ $(document).ready(function() {
 			'width' : 880,
 			'height' : 1313,
 			'fitToView' : false,
-			'closeBtn' : false
+			'closeBtn' : false,
+			'arrows' : false,
+			 beforeShow: function(){
+				$(".fancybox-skin").css("backgroundColor","transparent");
+				}
 		});
+		
 
 	$(".popup-gallery-close").click( function(e) {
 		$.fancybox.close();
+	});
+
+	$(".gallery-popup-prev").click( function(e) {
+		$.fancybox.prev();
+	});
+
+	$(".gallery-popup-next").click( function(e) {
+		$.fancybox.next();
 	});
 
 	$(".show-gallery-js").click( function(e) {
@@ -414,7 +442,10 @@ $(document).ready(function() {
 			'width' : 880,
 			'height' : 1313,
 			'fitToView' : false,
-			'closeBtn' : false
+			'closeBtn' : false,
+			beforeShow: function(){
+				$(".fancybox-skin").css("backgroundColor","transparent");
+				}
 		});
 
 	$(".popup-infrastructure-close").click( function(e) {
