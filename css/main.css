@@ -4628,9 +4628,9 @@ main.errorpage {
 /* ==========================================================================
 	 slick.js >>>
 	 ========================================================================== */
-.slick-disabled {
+/*.slick-disabled {
 	display: none !important;
-}
+}*/
 .slick-dotted.slick-slider {
 	margin-bottom: 0px;
 }
@@ -4726,5 +4726,40 @@ main.errorpage {
 		-webkit-box-shadow: 0 0 0;
 			 -moz-box-shadow: 0 0 0;
 						box-shadow: 0 0 0;
+}
+
+
+.fancybox-close {
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	top: -48px;
+	right: 10px;
+	background:	url("../images/svg/close.svg") 0 0 no-repeat;
+	cursor: pointer;
+}
+
+.fancybox-nav span {
+	visibility: visible;
+}
+
+.fancybox-nav span {
+	position: absolute;
+	width: 48px;
+	height: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 999;
+	cursor: pointer;
+}
+
+.fancybox-prev span {
+	left: -24px;
+	background: url("../images/svg/arow_left.svg") 0 0 no-repeat;
+}
+
+.fancybox-next span {
+	right: -24px;
+	background: url("../images/svg/arow_right.svg") 0 0 no-repeat;
 }
 
