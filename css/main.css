@@ -4628,7 +4628,7 @@ main.errorpage {
 /* ==========================================================================
 	 slick.js >>>
 	 ========================================================================== */
-.slick-disabled {
+.about-info-gallery .slick-disabled {
 	display: none !important;
 }
 .slick-dotted.slick-slider {
