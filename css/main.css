@@ -4628,9 +4628,9 @@ main.errorpage {
 /* ==========================================================================
 	 slick.js >>>
 	 ========================================================================== */
-/*.slick-disabled {
+.slick-disabled {
 	display: none !important;
-}*/
+}
 .slick-dotted.slick-slider {
 	margin-bottom: 0px;
 }

@@ -454,19 +454,22 @@ $('.images-range-control').slider({ disabled: "true" });
 
 
 
- // block-eventsAndActions filter
-	$('.eventsAndActions-filters span').click(function(){
-		var slider = $( '.eventsAndActions-slider' );
-		slider[0].slick.slickGoTo(parseInt(0));
+ // block-eventsAndActions filter toggle
+ 	$('.eventsAndActions-filters span').click(function(){
+			var slider = $( '.eventsAndActions-slider' );
+			slider[0].slick.slickGoTo(parseInt(0));
 	});
+
 	$(".eventsAndActions-filters span").click(function() {
-		var $this = $(this);
-		$(".eventsAndActions-filters span").removeClass("active-filter");
-		$this.addClass("active-filter");
-		
-		var filter = $this.attr("data-filter");
-		$(".eventsAndActions-slider .all").hide();
-		$(".eventsAndActions-slider ." + filter).stop( true, true ).fadeIn(700);
-	});
+			if ( !$(this).hasClass("active-filter")) {
+				var $this = $(this);
+				$(".eventsAndActions-filters span").removeClass("active-filter");
+				$this.addClass("active-filter");
+				var filter = $this.attr("data-filter");
+				$(".eventsAndActions-slider .all").hide();
+				$(".eventsAndActions-slider ." + filter).stop( true, true ).fadeIn(700);
+			} 
+		});
+
 
 });
