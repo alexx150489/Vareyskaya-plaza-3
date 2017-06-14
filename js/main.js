@@ -1,7 +1,4 @@
 $(document).ready(function() {
-	
-
-
 
 	// burger-animation
 	$('.burger-btn').click(function(){
@@ -14,33 +11,28 @@ $(document).ready(function() {
 		$("body").toggleClass('open-menu');
 		$(".block-header-navigation").slideToggle();
 	});
-
  
 	$(".burger-btn.tour").on('click', function(e) {
 		e.preventDefault();
 		$(".block-header-navigation").slideToggle();
 	});
 
-
-		$(".block-tour .open-slider").on('click', function(e) {
-			e.preventDefault();
-			$(".open-slider-btn").toggleClass('active');
-			$(".block-tour .slider-wrapper").slideToggle();
-		});
+	// block-tour slider menu
+	$(".block-tour .open-slider").on('click', function(e) {
+		e.preventDefault();
+		$(".open-slider-btn").toggleClass('active');
+		$(".block-tour .slider-wrapper").slideToggle();
+	});
 
 	// block-mainPage SMOOTH SCROLL
 
 	$(".scrollDown-wrapper").on("click", function(e) {
-
 		e.preventDefault();
-
 		var currentBlock = $(this).attr("href"),
 		currentBlockOffset = $(currentBlock).offset().top;
-
 		$("html, body").animate({
 			scrollTop: currentBlockOffset
 		}, 500);
-
 	});
 
 	// block-about SMOOTH SCROLL

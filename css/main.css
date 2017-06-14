@@ -347,6 +347,7 @@ header {width:100%;}
 .block-header-navigation ul {
 	width: 280px;
 	margin: 0 auto;
+	padding: 20px 0;
 	position: absolute;
 	transform: translate(-50%, -50%);
 	top: 50%;
@@ -1508,7 +1509,7 @@ main.errorpage {
 	color: #fff;
 }
 
-.block-sectionLinks .link span:hover {
+.block-sectionLinks .link:hover span {
 	color: #ffa500;
 }
 
